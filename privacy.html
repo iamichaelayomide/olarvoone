@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Olarvo One</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <nav class="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/images/logo.svg" alt="Olarvo One" class="h-8 w-auto" />
+      </a>
+      <a href="app.html" class="text-xs font-bold text-blue-600 hover:text-blue-700">Open App →</a>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 flex-1">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+      
+      <div>
+        <h1 class="text-3xl font-extrabold text-slate-950 dark:text-white">Privacy Policy</h1>
+        <p class="text-xs text-slate-400 mt-1">Last Updated: August 2026</p>
+      </div>
+
+      <div class="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-300 text-xs leading-relaxed flex items-start gap-3">
+        <i data-lucide="shield-check" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
+        <div>
+          <strong>Offline-First & Zero Tracker Commitment:</strong> Olarvo One is architected with a strict privacy-by-design approach. We do not embed behavioral advertising trackers or sell merchant business transactions to third-party brokers.
+        </div>
+      </div>
+
+      <section class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        <h2 class="text-base font-bold text-slate-900 dark:text-white">1. Local Device Data Storage</h2>
+        <p>
+          Olarvo One utilizes local web storage technologies (including browser LocalStorage and IndexedDB) on your device. All product lists, sales logs, client contacts, and store financial configurations are stored directly in your local environment.
+        </p>
+
+        <h2 class="text-base font-bold text-slate-900 dark:text-white">2. Offline Operations & Network Telemetry</h2>
+        <p>
+          You can utilize all core POS, inventory adjustment, receipt generation, and AI insight modules completely disconnected from the internet. When you are offline, no outbound network packets are dispatched.
+        </p>
+
+        <h2 class="text-base font-bold text-slate-900 dark:text-white">3. Customer Information & WhatsApp Sharing</h2>
+        <p>
+          When you generate digital receipts or invoices and elect to share them via WhatsApp, the recipient's phone number and itemized receipt details are passed directly to your local WhatsApp application client. No intermediate ad server intercepts or harvests this communication.
+        </p>
+
+        <h2 class="text-base font-bold text-slate-900 dark:text-white">4. Data Ownership & Deletion</h2>
+        <p>
+          You maintain full ownership of your data at all times. You can export your data to CSV or reset your local store data at any time via the Settings panel.
+        </p>
+
+        <h2 class="text-base font-bold text-slate-900 dark:text-white">5. Contact Information</h2>
+        <p>
+          For questions regarding data privacy and technical policies, reach out to:<br />
+          <strong>Olarvo LTD</strong><br />
+          Lagos, Nigeria<br />
+          Email: <a href="mailto:olarvoltd@gmail.com" class="text-blue-600 underline">olarvoltd@gmail.com</a>
+        </p>
+      </section>
+
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs text-slate-400">
+        <a href="index.html" class="hover:text-slate-600">← Back to Homepage</a>
+        <a href="terms.html" class="hover:text-slate-600">Terms of Service</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-6 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-400">
+    © 2026 Olarvo Ltd. All rights reserved.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => lucide.createIcons());
+  </script>
+</body>
+</html>
