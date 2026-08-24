@@ -64,9 +64,8 @@
 
         <!-- Desktop Navigation Links -->
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
-          <a href="#features" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Features</a>
+          <a href="#what-we-do" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">What we do</a>
           <a href="#how-it-works" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">How it works</a>
-          <a href="#insights" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Insights</a>
           <a href="#stories" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Who it's for</a>
           <a href="#faq" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">FAQ</a>
         </div>
@@ -104,9 +103,8 @@
 
     <!-- Mobile Dropdown -->
     <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-6 border-t border-slate-200 dark:border-slate-800 space-y-3 bg-[#FAF9F6] dark:bg-[#0D1117]">
-      <a href="#features" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Features</a>
+      <a href="#what-we-do" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">What we do</a>
       <a href="#how-it-works" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">How it works</a>
-      <a href="#insights" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Insights</a>
       <a href="#stories" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Who it's for</a>
       <a href="#faq" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">FAQ</a>
       <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
@@ -149,8 +147,8 @@
               <span>Start free</span>
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
-            <a href="#insights" class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/15 hover:bg-white/25 border border-white/40 text-white font-semibold text-sm rounded-2xl transition-all">
-              <span>See the AI insights</span>
+            <a href="#what-we-do" class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/15 hover:bg-white/25 border border-white/40 text-white font-semibold text-sm rounded-2xl transition-all">
+              <span>Explore what we do</span>
             </a>
           </div>
 
@@ -163,7 +161,7 @@
 
         </div>
 
-        <!-- Right Column: Real Stock Photography & Floating Badges (Cross-fading per Slide) -->
+        <!-- Right Column: Real Stock Photography & Floating Badges -->
         <div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end min-h-[360px] sm:min-h-[420px]">
           
           <div id="hero-right-col" class="relative w-full max-w-xs sm:max-w-sm flex items-end justify-center hero-content-fade">
@@ -198,7 +196,7 @@
 
       </div>
 
-      <!-- Slide Navigation Bar & Progress Tabs (Interactive & Auto-Advancing) -->
+      <!-- Slide Navigation Bar & Progress Tabs -->
       <div class="px-6 sm:px-8 py-3.5 bg-black/15 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-white/80">
         
         <!-- Clickable Feature Slide Tabs with Progress Lines -->
@@ -239,8 +237,220 @@
     </div>
   </section>
 
+  <!-- ========================================================================= -->
+  <!-- "WHAT WE DO" SECTION (Hauliin.com-Style Sticky Stacking Cards with Real Images) -->
+  <!-- ========================================================================= -->
+  <section id="what-we-do" class="py-20 lg:py-28 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
+          What we do
+        </h2>
+        <p class="mt-3 text-base sm:text-lg font-medium text-slate-600 dark:text-slate-400">
+          One system. Every stage of your retail shop covered.
+        </p>
+      </div>
+
+      <!-- Sticky Stacking Cards Container -->
+      <div class="flex flex-col gap-8 relative">
+        
+        <!-- CARD 1: Sales & POS Receipts (Dark Obsidian Card) -->
+        <div class="sticky top-24 sm:top-28 rounded-[2.5rem] overflow-hidden shadow-2xl bg-[#0F172A] text-white border border-slate-800 transition-transform">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+            
+            <!-- Left: Real Photo in Rounded Frame -->
+            <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
+              <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-slate-900">
+                <img src="assets/feature-receipt-narNZzeU.jpg" alt="Send receipt before they leave" class="w-full h-full object-cover" onerror="this.src='assets/images/feature-receipt-narNZzeU.jpg'" />
+              </div>
+            </div>
+
+            <!-- Right: Content & Pill Feature List -->
+            <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
+              <span class="text-xs font-bold text-coral-400 uppercase tracking-widest mb-1.5">Point of Sale</span>
+              <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-white tracking-tight leading-tight">
+                Sales & Digital Receipts
+              </h3>
+              <p class="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+                Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot. No paper, no thermal printer required.
+              </p>
+
+              <!-- Pill List (Hauliin style) -->
+              <ul class="mt-6 grid gap-2.5">
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white/[0.07] border border-white/10 text-white">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Instant WhatsApp & SMS receipt delivery</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white/[0.07] border border-white/10 text-white">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Cash, Transfer, POS machine & Mobile Money tracking</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white/[0.07] border border-white/10 text-white">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Custom shop branding, logo & contact on receipt</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 2: Stock & Inventory (Warm Light Card) -->
+        <div class="sticky top-28 sm:top-32 rounded-[2.5rem] overflow-hidden shadow-2xl bg-white dark:bg-[#161B22] text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 transition-transform">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+            
+            <!-- Left: Real Photo in Rounded Frame -->
+            <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
+              <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-slate-100 dark:bg-slate-900">
+                <img src="assets/feature-stock-Dgw1r1KG.jpg" alt="Shop owner checking stock levels" class="w-full h-full object-cover" onerror="this.src='assets/images/feature-stock-Dgw1r1KG.jpg'" />
+              </div>
+            </div>
+
+            <!-- Right: Content & Pill Feature List -->
+            <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
+              <span class="text-xs font-bold text-coral-500 uppercase tracking-widest mb-1.5">Inventory Tracking</span>
+              <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
+                Stock & Margin Manager
+              </h3>
+              <p class="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                Stock counts down with every sale, and you get a nudge the moment a fast mover is close to finishing. Always know what to reorder before the rush.
+              </p>
+
+              <!-- Pill List (Hauliin style) -->
+              <ul class="mt-6 grid gap-2.5">
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-950">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Automated low-stock warnings & reorder alerts</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-950">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Profit margin & cost valuation per item</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-950">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Complete intake & adjustment audit history</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 3: Weekly AI Insights (Signature Coral Card) -->
+        <div class="sticky top-32 sm:top-36 rounded-[2.5rem] overflow-hidden shadow-2xl bg-coral-500 text-white border border-coral-400 transition-transform">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+            
+            <!-- Left: Real Photo in Rounded Frame -->
+            <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
+              <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-coral-600">
+                <img src="assets/feature-insights-uoVGa4An.jpg" alt="Business owner reading weekly AI insights" class="w-full h-full object-cover" onerror="this.src='assets/images/feature-insights-uoVGa4An.jpg'" />
+              </div>
+            </div>
+
+            <!-- Right: Content & Pill Feature List -->
+            <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
+              <span class="text-xs font-bold text-coral-100 uppercase tracking-widest mb-1.5">Intelligence</span>
+              <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-white tracking-tight leading-tight">
+                Weekly AI Business Advisor
+              </h3>
+              <p class="mt-3 text-sm sm:text-base text-coral-100 leading-relaxed font-normal">
+                Every week Olarvo One reads your sales and tells you what is working, what is slipping, and the one thing to do next to grow your profits.
+              </p>
+
+              <!-- Pill List (Hauliin style) -->
+              <ul class="mt-6 grid gap-2.5">
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white text-slate-900 shadow-sm">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>"Saturday afternoons carried the week — open early"</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white text-slate-900 shadow-sm">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>"You may be underpricing Zobo — ₦100 bump adds ₦24k"</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white text-slate-900 shadow-sm">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Tailored recommendations delivered to your WhatsApp</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARD 4: Invoicing & Customer Debt CRM (Warm Tint Card) -->
+        <div class="sticky top-36 sm:top-40 rounded-[2.5rem] overflow-hidden shadow-2xl bg-amber-50 dark:bg-[#1E293B] text-slate-900 dark:text-white border border-amber-200 dark:border-slate-700 transition-transform">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
+            
+            <!-- Left: Real Photo in Rounded Frame -->
+            <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
+              <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-slate-200 dark:bg-slate-900">
+                <img src="assets/boutique-679IVfsK.jpg" alt="Fashion boutique and billing" class="w-full h-full object-cover" onerror="this.src='assets/images/boutique-679IVfsK.jpg'" />
+              </div>
+            </div>
+
+            <!-- Right: Content & Pill Feature List -->
+            <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
+              <span class="text-xs font-bold text-amber-700 dark:text-amber-400 uppercase tracking-widest mb-1.5">Billing & CRM</span>
+              <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
+                Invoices & Debt Reminders
+              </h3>
+              <p class="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                Issue official invoices, track client deposits, and automatically follow up on unpaid balances with friendly WhatsApp reminders.
+              </p>
+
+              <!-- Pill List (Hauliin style) -->
+              <ul class="mt-6 grid gap-2.5">
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Customer ledger & outstanding balance records</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>1-click WhatsApp payment reminders</span>
+                </li>
+                <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
+                  <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
+                    <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                  </span>
+                  <span>Custom invoice generator with VAT & tax calculations</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- Section 2: Up and running in minutes -->
-  <section id="how-it-works" class="py-20 lg:py-24 bg-[#FAF9F6] dark:bg-[#0D1117]">
+  <section id="how-it-works" class="py-20 lg:py-24 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-14">
@@ -296,85 +506,8 @@
     </div>
   </section>
 
-  <!-- Section 3: Features with Authentic High-Resolution Photography -->
-  <section id="features" class="py-20 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
-      
-      <!-- Feature 1: Sales & Receipts -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-6 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md">
-          <img src="assets/feature-receipt-narNZzeU.jpg" alt="Send receipt before they leave" class="w-full h-auto object-cover" onerror="this.src='assets/images/feature-receipt-narNZzeU.jpg'" />
-        </div>
-        <div class="lg:col-span-6 space-y-4">
-          <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Sales & receipts</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 dark:text-white tracking-tight">
-            Send the receipt before they leave
-          </h2>
-          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot. No paper, no printer, no delay.
-          </p>
-          <ul class="space-y-2.5 pt-2 text-sm text-slate-600 dark:text-slate-300 font-medium">
-            <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-coral-500 flex-shrink-0"></i> Instant WhatsApp & SMS digital receipts</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-coral-500 flex-shrink-0"></i> Customized with your shop name, logo & contact</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-coral-500 flex-shrink-0"></i> Works for Cash, Bank Transfer, POS & Mobile Money</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature 2: Stock & Inventory -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center lg:flex-row-reverse">
-        <div class="lg:col-span-6 lg:order-2 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md">
-          <img src="assets/feature-stock-Dgw1r1KG.jpg" alt="Shop owner checking stock levels" class="w-full h-auto object-cover" onerror="this.src='assets/images/feature-stock-Dgw1r1KG.jpg'" />
-        </div>
-        <div class="lg:col-span-6 lg:order-1 space-y-4">
-          <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Stock & inventory</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 dark:text-white tracking-tight">
-            Never run out of your best sellers
-          </h2>
-          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Stock counts down with every sale, and you get a nudge the moment a fast mover is close to finishing. Always know what to reorder before the weekend rush.
-          </p>
-          <ul class="space-y-2.5 pt-2 text-sm text-slate-600 dark:text-slate-300 font-medium">
-            <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-coral-500 flex-shrink-0"></i> Automatic low-stock warnings</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-coral-500 flex-shrink-0"></i> Complete audit history of sales, restocks & fixes</li>
-            <li class="flex items-center gap-2.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-coral-500 flex-shrink-0"></i> Cost vs selling price profit margins calculated per unit</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Feature 3: AI Insights -->
-      <div id="insights" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-6 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md">
-          <img src="assets/feature-insights-uoVGa4An.jpg" alt="Business owner reading weekly AI insights" class="w-full h-auto object-cover" onerror="this.src='assets/images/feature-insights-uoVGa4An.jpg'" />
-        </div>
-        <div class="lg:col-span-6 space-y-4">
-          <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Weekly AI Insights</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-950 dark:text-white tracking-tight">
-            Clear advice from your own numbers
-          </h2>
-          <p class="text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-            Every week Olarvo One reads your sales and tells you what is working, what is slipping, and the one thing to do next to grow your profits.
-          </p>
-          
-          <!-- Sample Insight Cards -->
-          <div class="space-y-3 pt-2">
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 text-xs">
-              <span class="font-bold text-slate-900 dark:text-white text-sm">"Saturday afternoons carried the week."</span>
-              <p class="text-slate-500 mt-1 leading-relaxed">Sales are up 22% on last week. Open early and stock the counter before noon.</p>
-            </div>
-            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 text-xs">
-              <span class="font-bold text-slate-900 dark:text-white text-sm">"You may be underpricing Zobo."</span>
-              <p class="text-slate-500 mt-1 leading-relaxed">High velocity with 18% margin. A ₦100 bump could add ₦24,000 monthly profit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Section 4: Who it's for (Authentic Stock Photos) -->
-  <section id="stories" class="py-20 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+  <!-- Section 3: Who it's for (Authentic Stock Photos) -->
+  <section id="stories" class="py-20 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-12">
@@ -424,8 +557,8 @@
     </div>
   </section>
 
-  <!-- Section 5: FAQ -->
-  <section id="faq" class="py-20 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+  <!-- Section 4: FAQ -->
+  <section id="faq" class="py-20 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-12">
@@ -436,7 +569,7 @@
 
       <div class="space-y-4">
         
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Can I use Olarvo One offline?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
