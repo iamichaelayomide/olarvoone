@@ -1,29 +1,801 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#EE7662" />
-    <title>Olarvo One | AI business assistant for African SMBs</title>
-    <meta name="description" content="Track sales, manage stock, send branded invoices and get AI insights to grow your small business. Built for vendors and shop owners across Africa." />
-    <meta name="author" content="Olarvo" />
-    <link rel="canonical" href="https://olarvoone.com/" />
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#EE7662" />
+  <title>Olarvo One — AI-Powered Business Assistant for African SMBs</title>
+  <meta name="description" content="Track sales, manage stock, issue branded WhatsApp invoices and unlock localized AI insights to scale your shop across Africa. 100% offline-ready." />
+  <meta name="author" content="Olarvo LTD" />
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+  <!-- Favicons & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
 
-    <meta property="og:title" content="Olarvo One | AI business assistant" />
-    <meta property="og:description" content="Track sales, manage stock, send branded invoices and get AI insights to grow your small business." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://olarvoone.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="/assets/index-DeXFI2jp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DZuwt28V.css">
-  </head>
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Olarvo One | AI Business Assistant for African SMBs" />
+  <meta property="og:description" content="Track sales, manage stock, issue WhatsApp invoices, and boost retail profits with AI insights. 100% offline-ready." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero-owner-BBtcWdiJ.png" />
 
-  <body>
-    <div id="root"></div>
-  </body>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            coral: {
+              50: '#fff5f3',
+              100: '#ffe8e4',
+              200: '#ffd5cc',
+              500: '#EE7662',
+              600: '#E05943',
+              700: '#C7422D',
+              800: '#A43422'
+            },
+            brand: {
+              dark: '#0B0F19',
+              card: '#111827',
+              blue: '#2563EB'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-[#FAFBFD] text-slate-900 dark:bg-[#0B0F19] dark:text-slate-100 transition-colors duration-200 antialiased selection:bg-coral-500 selection:text-white">
+
+  <!-- Header / Navigation Bar -->
+  <nav class="sticky top-0 z-50 glass-nav transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo Brand -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/olarvo-wordmark-dark-ClSgbQX-.svg" alt="Olarvo One Logo" class="h-8 sm:h-9 w-auto dark:brightness-0 dark:invert transition-transform group-hover:scale-105" onerror="this.src='assets/images/logo.svg'" />
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600 dark:text-slate-300">
+          <a href="#features" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Features</a>
+          <a href="#ai-insights" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            <span>AI Insights</span>
+          </a>
+          <a href="#simulator" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">App Simulator</a>
+          <a href="#roi-calculator" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">ROI Calculator</a>
+          <a href="#testimonials" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Stories</a>
+          <a href="#pricing" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Pricing</a>
+        </div>
+
+        <!-- Right Controls (Theme, Currency, CTAs) -->
+        <div class="hidden sm:flex items-center gap-3">
+          
+          <!-- Theme Toggle -->
+          <button onclick="toggleTheme()" class="p-2.5 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Dark/Light Mode">
+            <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+            <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+          </button>
+
+          <!-- Launch App CTA -->
+          <a href="app.html" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-white gradient-btn-coral rounded-xl shadow-lg shadow-coral-500/25 active:scale-95 transition-all">
+            <span>Launch "My Shop" App</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <button onclick="toggleTheme()" class="p-2 text-slate-600 dark:text-slate-300">
+            <i data-lucide="moon" class="w-5 h-5 dark:hidden"></i>
+            <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+          </button>
+          <button onclick="toggleMobileNav()" class="p-2 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobile-nav" class="hidden lg:hidden px-4 pt-2 pb-6 border-t border-slate-200 dark:border-slate-800 space-y-3 bg-white dark:bg-[#0B0F19]">
+      <a href="#features" onclick="toggleMobileNav()" class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200">Features</a>
+      <a href="#ai-insights" onclick="toggleMobileNav()" class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200">AI Insights</a>
+      <a href="#simulator" onclick="toggleMobileNav()" class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200">Interactive App Simulator</a>
+      <a href="#roi-calculator" onclick="toggleMobileNav()" class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200">ROI Calculator</a>
+      <a href="#testimonials" onclick="toggleMobileNav()" class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200">Merchant Stories</a>
+      <a href="#pricing" onclick="toggleMobileNav()" class="block py-2 text-sm font-bold text-slate-700 dark:text-slate-200">Pricing</a>
+      <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-2">
+        <a href="app.html" class="w-full text-center py-3 font-bold text-white gradient-btn-coral rounded-xl shadow-md">Open "My Shop" Platform</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+    <!-- Ambient Gradient Blobs -->
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-gradient-to-tr from-coral-500/15 via-orange-500/10 to-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Hero Copy & CTAs -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Announcement Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-coral-50 dark:bg-coral-950/60 border border-coral-200 dark:border-coral-900 text-coral-600 dark:text-coral-300 text-xs font-extrabold mb-6 animate-pulse-glow">
+            <i data-lucide="sparkles" class="w-4 h-4 text-coral-500"></i>
+            <span>#1 AI Assistant for African SMBs & Vendors • 100% Offline-Ready</span>
+          </div>
+
+          <!-- Main Power Title -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 dark:text-white leading-[1.1] mb-6">
+            Run Your Entire <span class="gradient-text-coral">African Shop</span> Smarter with AI.
+          </h1>
+
+          <!-- Hero Subtitle -->
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 font-medium">
+            Log sales in seconds, automate stock reorder warnings, generate instant branded WhatsApp receipts, and boost revenue with localized AI retail insights. All 100% offline with zero ad trackers.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="app.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 text-base font-extrabold text-white gradient-btn-coral rounded-2xl shadow-xl shadow-coral-500/30 hover:shadow-coral-500/40 active:scale-95 transition-all">
+              <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
+              <span>Launch "My Shop" Demo</span>
+            </a>
+            <a href="#simulator" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-bold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 rounded-2xl shadow-sm transition-all">
+              <i data-lucide="play-circle" class="w-5 h-5 text-coral-500"></i>
+              <span>Test Interactive Simulator</span>
+            </a>
+          </div>
+
+          <!-- Micro Trust Badges -->
+          <div class="mt-10 pt-8 border-t border-slate-200/80 dark:border-slate-800 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">10,000+</div>
+              <div class="text-xs text-slate-500 font-semibold mt-0.5">Sales Recorded</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-coral-500">100%</div>
+              <div class="text-xs text-slate-500 font-semibold mt-0.5">Offline-Ready</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-emerald-500">₦0 / $0</div>
+              <div class="text-xs text-slate-500 font-semibold mt-0.5">No Hidden Fees</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Authentic Hero Showcase with Owner & Dynamic Overlays -->
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          
+          <div class="relative w-full max-w-md">
+            
+            <!-- Hero Owner Portrait -->
+            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 bg-gradient-to-b from-coral-100 to-amber-50 dark:from-slate-800 dark:to-slate-900 animate-float-hero">
+              <img src="assets/hero-owner-BBtcWdiJ.png" alt="African Shop Owner using Olarvo One" class="w-full h-auto object-cover" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />
+            </div>
+
+            <!-- Floating Card 1: Stock Status Preview -->
+            <div class="absolute -top-6 -left-6 z-20 glass-card p-3.5 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 animate-float-1 max-w-[210px]">
+              <img src="assets/hero-stock-Cob-MpdW.jpg" alt="Stock item" class="w-12 h-12 rounded-xl object-cover" onerror="this.src='assets/images/hero-stock-Cob-MpdW.jpg'" />
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-600">Stock Alert</span>
+                <p class="text-xs font-black text-slate-900 dark:text-white line-clamp-1">Provisions & Semo</p>
+                <p class="text-[11px] text-slate-500">24 bags remaining</p>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: AI Lagos Market Recommendation -->
+            <div class="absolute -bottom-6 -right-6 z-20 glass-card p-4 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 flex items-center gap-3 animate-float-2 max-w-[240px]">
+              <img src="assets/hero-insights-0Uulwbcn.jpg" alt="AI insights" class="w-12 h-12 rounded-xl object-cover" onerror="this.src='assets/images/hero-insights-0Uulwbcn.jpg'" />
+              <div>
+                <div class="flex items-center gap-1 text-[10px] font-bold text-coral-500 uppercase">
+                  <i data-lucide="sparkles" class="w-3 h-3"></i> AI Peak Advice
+                </div>
+                <p class="text-xs font-bold text-slate-900 dark:text-white mt-0.5">Friday rush coming: Bundle Semo + Milo</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Simulator Section -->
+  <section id="simulator" class="py-20 bg-slate-100 dark:bg-slate-900/60 border-t border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-extrabold text-coral-500 uppercase tracking-widest mb-3">Live Interactive Simulator</h2>
+        <p class="text-3xl sm:text-4xl font-black text-slate-950 dark:text-white">
+          Experience Olarvo One Right Inside Your Browser
+        </p>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-3 font-medium">
+          Click through the interactive tabs below to preview the live application features, POS checkout, and AI studio.
+        </p>
+      </div>
+
+      <!-- Simulator Box -->
+      <div class="bg-white dark:bg-[#0F172A] rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden max-w-5xl mx-auto">
+        
+        <!-- Browser Mock Window Bar -->
+        <div class="px-6 py-4 bg-slate-50 dark:bg-slate-800/80 border-b border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+            <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+            <span class="ml-2 text-xs font-mono font-bold text-slate-500">app.olarvoone.com/myshop</span>
+          </div>
+
+          <!-- Simulator Tab Switcher -->
+          <div class="flex items-center gap-1.5 p-1 bg-slate-200 dark:bg-slate-900 rounded-xl text-xs font-bold">
+            <button onclick="switchSimTab('overview')" id="sim-tab-overview" class="sim-tab px-3 py-1.5 rounded-lg bg-white dark:bg-slate-800 text-coral-600 dark:text-coral-400 shadow-sm transition-all">
+              Overview
+            </button>
+            <button onclick="switchSimTab('app-preview')" id="sim-tab-app-preview" class="sim-tab px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+              App Showcase
+            </button>
+            <button onclick="switchSimTab('pos-demo')" id="sim-tab-pos-demo" class="sim-tab px-3 py-1.5 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+              Live POS Terminal
+            </button>
+          </div>
+
+          <a href="app.html" class="text-xs font-extrabold text-coral-500 hover:underline flex items-center gap-1">
+            Open Full App <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Tab 1: Overview Mockup -->
+        <div id="sim-view-overview" class="p-6 sm:p-8 space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="p-5 rounded-2xl bg-coral-50/50 dark:bg-coral-950/30 border border-coral-200 dark:border-coral-900">
+              <span class="text-xs font-bold text-coral-600 dark:text-coral-400 uppercase">Today's Sales</span>
+              <p class="text-2xl font-black text-slate-950 dark:text-white mt-1">₦84,500.00</p>
+              <span class="text-[11px] font-semibold text-emerald-600">+18% vs yesterday</span>
+            </div>
+            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs font-bold text-slate-500 uppercase">Estimated Net Profit</span>
+              <p class="text-2xl font-black text-emerald-600 mt-1">₦31,200.00</p>
+              <span class="text-[11px] font-semibold text-slate-500">36.9% net margin</span>
+            </div>
+            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs font-bold text-slate-500 uppercase">Low Stock Alerts</span>
+              <p class="text-2xl font-black text-amber-600 mt-1">2 Items Below Safety Line</p>
+              <span class="text-[11px] font-semibold text-amber-600">Oraimo Powerbank & Semo 10kg</span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-coral-500/10 via-amber-500/10 to-blue-500/10 border border-coral-200 dark:border-coral-900 flex items-start gap-4">
+            <div class="p-3 bg-coral-500 text-white rounded-xl shadow-md">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <div class="flex-1">
+              <h4 class="font-bold text-sm text-slate-900 dark:text-white">AI Assistant Recommendation:</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">
+                "Your grocery turnover is fastest on Friday afternoons. We generated a WhatsApp broadcast promo template for your semovita & beverage customers. Click to send!"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: High-Res App Screenshot Showcase -->
+        <div id="sim-view-app-preview" class="p-6 hidden">
+          <div class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg">
+            <img src="assets/app-preview-DhT4qHiV.jpg" alt="Olarvo One Application Showcase" class="w-full h-auto object-cover" onerror="this.src='assets/images/app-preview-DhT4qHiV.jpg'" />
+          </div>
+        </div>
+
+        <!-- Tab 3: Interactive POS Demo -->
+        <div id="sim-view-pos-demo" class="p-6 sm:p-8 space-y-6 hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left: Clickable items -->
+            <div class="space-y-3">
+              <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500">Click Product to Add to Cart:</h4>
+              <div class="grid grid-cols-2 gap-2 text-xs">
+                <button onclick="addSimItem('Golden Penny Semovita 10kg', 12000)" class="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-coral-500 bg-slate-50 dark:bg-slate-800 text-left transition-all">
+                  <div class="font-bold text-slate-900 dark:text-white">Semovita 10kg</div>
+                  <div class="text-coral-500 font-extrabold mt-1">₦12,000</div>
+                </button>
+                <button onclick="addSimItem('Milo Refill Pack 800g', 5300)" class="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-coral-500 bg-slate-50 dark:bg-slate-800 text-left transition-all">
+                  <div class="font-bold text-slate-900 dark:text-white">Milo 800g</div>
+                  <div class="text-coral-500 font-extrabold mt-1">₦5,300</div>
+                </button>
+                <button onclick="addSimItem('Oraimo 20000mAh Power Bank', 22000)" class="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-coral-500 bg-slate-50 dark:bg-slate-800 text-left transition-all">
+                  <div class="font-bold text-slate-900 dark:text-white">Oraimo Power Bank</div>
+                  <div class="text-coral-500 font-extrabold mt-1">₦22,000</div>
+                </button>
+                <button onclick="addSimItem('Ankara Fabric (6 Yards)', 16500)" class="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-coral-500 bg-slate-50 dark:bg-slate-800 text-left transition-all">
+                  <div class="font-bold text-slate-900 dark:text-white">Ankara Fabric</div>
+                  <div class="text-coral-500 font-extrabold mt-1">₦16,500</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Simulated Cart -->
+            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-2">Simulated POS Cart:</h4>
+                <div id="sim-cart-list" class="space-y-1.5 text-xs max-h-36 overflow-y-auto pr-1">
+                  <div class="text-slate-400 italic text-center py-4">Click items on the left to add!</div>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-slate-200 dark:border-slate-700 mt-3 flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-500">Total:</span>
+                  <p id="sim-cart-total" class="text-base font-black text-coral-600 dark:text-coral-400">₦0.00</p>
+                </div>
+                <a href="app.html" class="px-4 py-2 bg-coral-500 hover:bg-coral-600 text-white rounded-xl text-xs font-bold shadow-md">
+                  Open Full POS App →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Grid with Original Photography -->
+  <section id="features" class="py-24 bg-white dark:bg-[#0B0F19]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <h2 class="text-xs font-extrabold text-coral-500 uppercase tracking-widest mb-3">Tailored for African Realities</h2>
+        <p class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 dark:text-white">
+          Everything You Need to Scale Your Shop
+        </p>
+        <p class="text-base text-slate-600 dark:text-slate-400 mt-4 font-medium">
+          Built specifically for retail shop owners, provision stores, electronics vendors, boutiques, and supermarkets across Africa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Stock Management with Image -->
+        <div class="rounded-3xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/feature-stock-Dgw1r1KG.jpg" alt="Inventory and Stock Tracking" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/feature-stock-Dgw1r1KG.jpg'" />
+          </div>
+          <div class="p-6">
+            <div class="w-10 h-10 rounded-xl bg-coral-100 dark:bg-coral-950 text-coral-600 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="boxes" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Smart Inventory & Safety Limits</h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              Monitor stock levels, set low-stock threshold alerts, and track every single restock, sale, and stock adjustment in a permanent audit log.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: WhatsApp Receipts with Image -->
+        <div class="rounded-3xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/feature-receipt-narNZzeU.jpg" alt="WhatsApp Receipts and Invoices" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/feature-receipt-narNZzeU.jpg'" />
+          </div>
+          <div class="p-6">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">1-Click WhatsApp Receipts</h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              Send itemized, formatted digital receipts and official invoices straight to your customers' WhatsApp with zero paperwork.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: AI Insights with Image -->
+        <div class="rounded-3xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all group">
+          <div class="h-48 overflow-hidden">
+            <img src="assets/feature-insights-uoVGa4An.jpg" alt="AI Business Insights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/feature-insights-uoVGa4An.jpg'" />
+          </div>
+          <div class="p-6">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-600 flex items-center justify-center font-bold mb-4">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Localized AI Business Advisor</h3>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              Get intelligent recommendations on supplier reorders, peak customer traffic times in Lagos and urban centers, and promotional bundles.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI & Profit Calculator Section -->
+  <section id="roi-calculator" class="py-20 bg-slate-50 dark:bg-slate-900/40 border-t border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-extrabold text-coral-500 uppercase tracking-widest mb-2">Interactive Calculator</h2>
+        <p class="text-3xl font-black text-slate-950 dark:text-white">Estimate Your Monthly Shop Profit</p>
+        <p class="text-xs text-slate-500 mt-2 font-medium">Adjust your daily revenue and margin to see projected returns.</p>
+      </div>
+
+      <div class="p-8 rounded-3xl bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        
+        <!-- Controls -->
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between text-xs font-bold mb-2">
+              <span class="text-slate-700 dark:text-slate-300">Average Daily Sales (₦):</span>
+              <span id="roi-sales-label" class="text-coral-500 font-extrabold">₦100,000</span>
+            </div>
+            <input id="roi-sales-slider" type="range" min="10000" max="1000000" step="10000" value="100000" oninput="calculateROI()" class="w-full accent-coral-500 cursor-pointer" />
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold mb-2">
+              <span class="text-slate-700 dark:text-slate-300">Estimated Gross Margin (%):</span>
+              <span id="roi-margin-label" class="text-coral-500 font-extrabold">30%</span>
+            </div>
+            <input id="roi-margin-slider" type="range" min="10" max="60" step="1" value="30" oninput="calculateROI()" class="w-full accent-coral-500 cursor-pointer" />
+          </div>
+
+          <div class="p-3 bg-slate-50 dark:bg-slate-800 rounded-xl text-[11px] text-slate-500 font-medium">
+            💡 Olarvo One typically reduces inventory stockouts by <strong>45%</strong> and saves shopkeepers <strong>12+ hours/month</strong> in bookkeeping.
+          </div>
+        </div>
+
+        <!-- Calculated Outcome -->
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-coral-500 to-orange-600 text-white text-center shadow-lg space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-coral-100">Projected Monthly Net Profit</span>
+          <div id="roi-monthly-profit" class="text-4xl font-black">₦900,000</div>
+          <div class="pt-4 border-t border-white/20 grid grid-cols-2 gap-2 text-left text-xs">
+            <div>
+              <span class="text-coral-100 text-[10px]">Monthly Turnover:</span>
+              <p id="roi-monthly-turnover" class="font-extrabold">₦3,000,000</p>
+            </div>
+            <div>
+              <span class="text-coral-100 text-[10px]">Saved Stockout Value:</span>
+              <p id="roi-stockout-savings" class="font-extrabold">₦135,000</p>
+            </div>
+          </div>
+          <a href="app.html" class="block w-full py-3 bg-white text-coral-600 font-extrabold text-xs rounded-xl shadow hover:bg-coral-50 transition-colors">
+            Start Managing Free →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Merchant Testimonials & Authentic Case Studies -->
+  <section id="testimonials" class="py-24 bg-white dark:bg-[#0B0F19]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-extrabold text-coral-500 uppercase tracking-widest mb-3">Merchant Stories</h2>
+        <p class="text-3xl sm:text-4xl font-black text-slate-950 dark:text-white">
+          Loved by Shopkeepers Across West & East Africa
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Story 1: Provisions Shopkeeper in Lagos -->
+        <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <img src="assets/shopkeeper-C5MnsndJ.jpg" alt="Alhaji Bello" class="w-14 h-14 rounded-2xl object-cover shadow-sm" onerror="this.src='assets/images/shopkeeper-C5MnsndJ.jpg'" />
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">Alhaji Bello</h4>
+                <p class="text-xs text-slate-500 font-medium">Bello Provisions Mart (Ikeja, Lagos)</p>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              "Before Olarvo One, my boys forgot to record cash sales and we ran out of Semovita constantly. Now, the WhatsApp receipts and stock alerts keep our shop completely organized even when network is down."
+            </p>
+          </div>
+          <div class="flex text-amber-400 mt-4 text-xs">★★★★★</div>
+        </div>
+
+        <!-- Story 2: Boutique Owner in Accra -->
+        <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <img src="assets/boutique-679IVfsK.jpg" alt="Akosua Mensah" class="w-14 h-14 rounded-2xl object-cover shadow-sm" onerror="this.src='assets/images/boutique-679IVfsK.jpg'" />
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">Akosua Mensah</h4>
+                <p class="text-xs text-slate-500 font-medium">AfriChic Fabrics & Boutique (Accra)</p>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              "The AI promotion templates are incredible. It told me to bundle Ankara 6-yards with fashion accessories for the weekend, and my sales jumped 30% that very Saturday!"
+            </p>
+          </div>
+          <div class="flex text-amber-400 mt-4 text-xs">★★★★★</div>
+        </div>
+
+        <!-- Story 3: Salon & Grooming in Nairobi -->
+        <div class="p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <img src="assets/barber-tKGcd5N0.jpg" alt="Kevin Otieno" class="w-14 h-14 rounded-2xl object-cover shadow-sm" onerror="this.src='assets/images/barber-tKGcd5N0.jpg'" />
+              <div>
+                <h4 class="font-bold text-sm text-slate-900 dark:text-white">Kevin Otieno</h4>
+                <p class="text-xs text-slate-500 font-medium">K-Style Grooming & Electronics (Nairobi)</p>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              "Being able to switch currency to Kenyan Shillings (KSh) and bill my grooming clients or product buyers directly on WhatsApp makes my business look 10x more professional."
+            </p>
+          </div>
+          <div class="flex text-amber-400 mt-4 text-xs">★★★★★</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans Section -->
+  <section id="pricing" class="py-20 bg-slate-50 dark:bg-slate-900/60 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-extrabold text-coral-500 uppercase tracking-widest mb-3">Simple & Affordable</h2>
+        <p class="text-3xl sm:text-4xl font-black text-slate-950 dark:text-white">
+          Transparent Pricing for Growing Shops
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Starter Plan -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Free Starter</h3>
+            <p class="text-xs text-slate-500 mt-1">For sole traders and small kiosks</p>
+            <div class="mt-6 mb-6">
+              <span class="text-4xl font-black text-slate-900 dark:text-white">₦0</span>
+              <span class="text-xs text-slate-400">/ forever</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Up to 50 Products in Catalog</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> POS Sales Logging</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> 100% Offline Local Storage</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> WhatsApp Receipt Generator</li>
+            </ul>
+          </div>
+          <a href="app.html" class="mt-8 block text-center py-3 px-4 rounded-xl font-bold text-xs bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white transition-colors">
+            Get Started Free
+          </a>
+        </div>
+
+        <!-- Pro Growth Plan -->
+        <div class="p-8 rounded-3xl bg-gradient-to-b from-coral-500 to-orange-600 text-white relative flex flex-col justify-between shadow-2xl shadow-coral-500/30 scale-105">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 bg-white text-coral-600 font-black text-[11px] rounded-full uppercase tracking-wider shadow-md">
+            Most Popular
+          </div>
+          <div>
+            <h3 class="text-xl font-black">Pro Growth</h3>
+            <p class="text-xs text-coral-100 mt-1">For growing shops, supermarkets & boutiques</p>
+            <div class="mt-6 mb-6">
+              <span class="text-4xl font-black">₦4,500</span>
+              <span class="text-xs text-coral-200">/ month</span>
+            </div>
+            <ul class="space-y-3 text-xs text-white font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Unlimited Products & Sales</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> AI Assistant Insights & Reorders</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Stock Adjustment Audit Trail</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> Customer Debt Follow-up Generator</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-white"></i> One-Click CSV & PDF Exports</li>
+            </ul>
+          </div>
+          <a href="app.html" class="mt-8 block text-center py-3.5 px-4 rounded-xl font-black text-xs bg-white text-coral-600 hover:bg-coral-50 transition-all shadow-md">
+            Start 14-Day Free Trial
+          </a>
+        </div>
+
+        <!-- Business Elite Plan -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-[#0F172A] border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Business Elite</h3>
+            <p class="text-xs text-slate-500 mt-1">For multi-outlet & high volume stores</p>
+            <div class="mt-6 mb-6">
+              <span class="text-4xl font-black text-slate-900 dark:text-white">₦12,000</span>
+              <span class="text-xs text-slate-400">/ month</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Everything in Pro Growth</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Multi-Outlet Stock Transfers</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Custom Thermal Receipt Branding</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Dedicated Priority Support</li>
+            </ul>
+          </div>
+          <a href="app.html" class="mt-8 block text-center py-3 px-4 rounded-xl font-bold text-xs bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white transition-colors">
+            Contact Sales
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-gradient-to-r from-coral-500 via-orange-500 to-coral-600 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 relative z-10">
+      <h2 class="text-3xl sm:text-4xl font-black mb-4">Start Managing Your Shop Smarter Today</h2>
+      <p class="text-base text-coral-100 mb-8 max-w-2xl mx-auto font-medium">
+        Join hundreds of successful retail stores, boutiques, and provision shops across Africa using Olarvo One.
+      </p>
+      <a href="app.html" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-coral-600 font-black rounded-2xl shadow-xl hover:bg-coral-50 active:scale-95 transition-all text-sm">
+        <span>Launch "My Shop" Now</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0B0F19] text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <div class="space-y-3">
+          <img src="assets/olarvo-wordmark-dark-ClSgbQX-.svg" alt="Olarvo One" class="h-8 brightness-0 invert" onerror="this.src='assets/images/logo.svg'" />
+          <p class="text-slate-400 leading-relaxed font-medium">
+            Smart AI-Powered Business Assistant for African SMBs & Vendors.
+          </p>
+          <p class="text-slate-500">A product of Olarvo Ltd (Lagos, Nigeria).</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Platform</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="app.html" class="hover:text-white transition-colors">My Shop Web App</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors">POS & Sales Log</a></li>
+            <li><a href="#features" class="hover:text-white transition-colors">Inventory Tracker</a></li>
+            <li><a href="#ai-insights" class="hover:text-white transition-colors">AI Business Advisor</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Legal & Company</h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="mailto:olarvoltd@gmail.com" class="hover:text-white transition-colors">Contact Support</a></li>
+            <li><a href="tel:+2347045607662" class="hover:text-white transition-colors">+234 704 560 7662</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Headquarters</h4>
+          <p class="text-slate-400 leading-relaxed font-medium">
+            Lagos, Nigeria.<br />
+            NextGen AI Initiative Partner.
+          </p>
+          <div class="mt-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span class="text-emerald-400 font-bold text-[11px]">100% Offline Systems Operational</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 font-medium">
+        <p>© 2026 Olarvo Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="privacy.html" class="hover:text-slate-400">Privacy</a>
+          <a href="terms.html" class="hover:text-slate-400">Terms</a>
+          <a href="app.html" class="hover:text-slate-400">Merchant Login</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobile-nav');
+      if (nav) nav.classList.toggle('hidden');
+    }
+
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('olarvo_theme', isDark ? 'dark' : 'light');
+    }
+
+    // Simulator Tab Switcher
+    function switchSimTab(tabKey) {
+      document.querySelectorAll('.sim-tab').forEach(b => {
+        b.classList.remove('bg-white', 'dark:bg-slate-800', 'text-coral-600', 'dark:text-coral-400', 'shadow-sm');
+        b.classList.add('text-slate-600', 'dark:text-slate-400');
+      });
+
+      const activeBtn = document.getElementById(`sim-tab-${tabKey}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-white', 'dark:bg-slate-800', 'text-coral-600', 'dark:text-coral-400', 'shadow-sm');
+        activeBtn.classList.remove('text-slate-600', 'dark:text-slate-400');
+      }
+
+      document.getElementById('sim-view-overview').classList.add('hidden');
+      document.getElementById('sim-view-app-preview').classList.add('hidden');
+      document.getElementById('sim-view-pos-demo').classList.add('hidden');
+
+      const target = document.getElementById(`sim-view-${tabKey}`);
+      if (target) target.classList.remove('hidden');
+    }
+
+    // Simulated POS Cart
+    let simCart = [];
+    function addSimItem(name, price) {
+      simCart.push({ name, price });
+      renderSimCart();
+    }
+
+    function renderSimCart() {
+      const container = document.getElementById('sim-cart-list');
+      const totalEl = document.getElementById('sim-cart-total');
+      if (!container || !totalEl) return;
+
+      if (simCart.length === 0) {
+        container.innerHTML = `<div class="text-slate-400 italic text-center py-4">Click items on the left to add!</div>`;
+        totalEl.innerText = '₦0.00';
+        return;
+      }
+
+      let total = 0;
+      container.innerHTML = simCart.map(item => {
+        total += item.price;
+        return `
+          <div class="flex justify-between items-center p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700">
+            <span class="font-bold text-slate-800 dark:text-slate-200">${item.name}</span>
+            <span class="font-black text-coral-500">₦${item.price.toLocaleString()}</span>
+          </div>
+        `;
+      }).join('');
+
+      totalEl.innerText = '₦' + total.toLocaleString() + '.00';
+    }
+
+    // ROI Calculator
+    function calculateROI() {
+      const sales = parseFloat(document.getElementById('roi-sales-slider').value);
+      const margin = parseFloat(document.getElementById('roi-margin-slider').value);
+
+      document.getElementById('roi-sales-label').innerText = '₦' + sales.toLocaleString();
+      document.getElementById('roi-margin-label').innerText = margin + '%';
+
+      const monthlySales = sales * 30;
+      const monthlyProfit = monthlySales * (margin / 100);
+      const stockoutSavings = monthlyProfit * 0.15; // 15% boost from stockouts prevention
+
+      document.getElementById('roi-monthly-turnover').innerText = '₦' + monthlySales.toLocaleString();
+      document.getElementById('roi-monthly-profit').innerText = '₦' + Math.round(monthlyProfit).toLocaleString();
+      document.getElementById('roi-stockout-savings').innerText = '₦' + Math.round(stockoutSavings).toLocaleString();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem('olarvo_theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+      lucide.createIcons();
+      calculateROI();
+    });
+  </script>
+</body>
 </html>
