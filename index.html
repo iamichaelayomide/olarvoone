@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#EE7662" />
   <title>Olarvo One | AI Business Assistant for African SMBs</title>
-  <meta name="description" content="Track sales, manage stock, send branded WhatsApp receipts and get localized AI insights to grow your shop. Built for vendors and small business owners across Africa." />
+  <meta name="description" content="Track sales, manage stock, send branded WhatsApp receipts and get localized AI insights to grow your small business. Built for African retailers." />
   <meta name="author" content="Olarvo LTD" />
 
   <!-- Favicons & Manifest -->
@@ -117,61 +117,54 @@
   </nav>
 
   <!-- ========================================================================= -->
-  <!-- HERO SECTION: Clean Typography + Timed Rotating Stage + Scrollable Gallery -->
+  <!-- HERO SECTION: Signature Coral Canvas with Golden-Ratio Proportions & Auto-Play -->
   <!-- ========================================================================= -->
-  <section class="pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Top Hero Statement -->
-      <div class="text-center max-w-3xl mx-auto mb-10">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coral-50 dark:bg-coral-950/60 border border-coral-200 dark:border-coral-900 text-coral-600 dark:text-coral-400 text-xs font-bold mb-5">
-          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-coral-500"></i>
-          <span>Built for African Merchants & Retailers • 100% Offline Ready</span>
+  <section class="py-6 sm:py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Hero Style Selector Bar (Allows User to Preview Hero Variations) -->
+      <div class="flex items-center justify-between mb-4 px-2">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Live Hero Preview</span>
         </div>
-
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 dark:text-white leading-[1.1] mb-5">
-          The AI business assistant for <span class="text-coral-500">African SMBs</span>
-        </h1>
-
-        <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal max-w-2xl mx-auto mb-8">
-          Track sales in two taps, monitor stock before it finishes, send branded WhatsApp receipts, and get AI guidance tailored to local retail demand.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
-          <a href="app.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-bold text-white bg-coral-500 hover:bg-coral-600 active:scale-95 rounded-2xl shadow-xl shadow-coral-500/25 transition-all">
-            <span>Launch "My Shop" Free</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <a href="#how-it-works" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-750 rounded-2xl shadow-sm transition-all">
-            <span>See how it works</span>
-          </a>
+        <div class="flex items-center gap-1.5 p-1 bg-slate-200/80 dark:bg-slate-800 rounded-xl text-xs font-semibold">
+          <button onclick="setHeroStyle('coral')" id="btn-hero-coral" class="px-3 py-1 rounded-lg bg-white dark:bg-slate-700 text-coral-600 dark:text-coral-400 shadow-sm transition-all font-bold">
+            1. Signature Coral Stage
+          </button>
+          <button onclick="setHeroStyle('minimal')" id="btn-hero-minimal" class="px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            2. Split Editorial Canvas
+          </button>
+          <button onclick="setHeroStyle('mockup')" id="btn-hero-mockup" class="px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
+            3. Interactive POS Demo
+          </button>
         </div>
       </div>
 
-      <!-- Main Rotating Coral Card Showcase -->
-      <div id="hero-carousel-card" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()" class="rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none mb-12">
+      <!-- VARIATION 1: SIGNATURE CORAL STAGE (Clean, Refined, Golden Ratio) -->
+      <div id="hero-style-coral" class="rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14 min-h-[460px]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center px-6 py-12 sm:px-12 sm:py-16 lg:px-16 lg:py-16 min-h-[500px]">
           
-          <!-- Left: Rotating Content -->
+          <!-- Left: Rotating Typography -->
           <div id="hero-left-col" class="lg:col-span-7 z-10 text-left hero-content-fade">
+            
             <div id="hero-eyebrow" class="inline-flex items-center gap-2 text-white/90 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-4">
               <i data-lucide="sparkles" class="w-4 h-4 text-white"></i>
               <span>SALES & RECEIPTS</span>
             </div>
 
-            <h2 id="hero-title" class="text-3xl sm:text-4xl lg:text-[48px] font-black text-white leading-[1.08] tracking-tight mb-5">
+            <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-[54px] font-black text-white leading-[1.08] tracking-tight mb-5">
               Sell. Record. Get paid.
               <span class="block text-white/95 font-extrabold mt-1">All from your phone.</span>
-            </h2>
+            </h1>
 
-            <p id="hero-body" class="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed max-w-xl mb-8 font-normal">
+            <p id="hero-body" class="text-base sm:text-lg text-white/90 leading-relaxed max-w-xl mb-8 font-normal">
               Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot.
             </p>
 
-            <div class="flex flex-wrap items-center gap-3.5 mb-8">
-              <a href="app.html" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-slate-900 font-bold text-sm rounded-2xl shadow-xl hover:bg-slate-50 active:scale-95 transition-all">
+            <div class="flex flex-wrap items-center gap-3.5 mb-10">
+              <a href="app.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-900 font-bold text-sm rounded-2xl shadow-xl hover:bg-slate-50 active:scale-95 transition-all">
                 <span>Start free</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
@@ -185,14 +178,15 @@
               <span class="flex items-center gap-1.5"><i data-lucide="wifi-off" class="w-3.5 h-3.5"></i> 100% Offline-ready</span>
               <span class="flex items-center gap-1.5"><i data-lucide="send" class="w-3.5 h-3.5"></i> Instant WhatsApp receipts</span>
             </div>
+
           </div>
 
-          <!-- Right: Rotating Image Box -->
-          <div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end min-h-[340px] sm:min-h-[390px]">
+          <!-- Right: Cutout Photo & Floating Badges -->
+          <div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end min-h-[360px] sm:min-h-[420px]">
             <div id="hero-right-col" class="relative w-full max-w-xs sm:max-w-sm flex items-end justify-center hero-content-fade">
               
               <div id="hero-img-box" class="w-full flex items-end justify-center">
-                <img id="hero-main-img" src="assets/hero-owner-BBtcWdiJ.png" alt="African shop owner" class="w-full h-auto object-contain max-h-[420px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />
+                <img id="hero-main-img" src="assets/hero-owner-BBtcWdiJ.png" alt="African shop owner" class="w-full h-auto object-contain max-h-[440px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />
               </div>
 
               <!-- Floating Card Top -->
@@ -219,7 +213,7 @@
 
         </div>
 
-        <!-- Slide Navigation Tabs & Live Progress Bars -->
+        <!-- Slide Tabs & Live Progress Bars -->
         <div class="px-6 sm:px-8 py-3.5 bg-black/15 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-white/80">
           <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
             <button onclick="goToHeroSlide(0)" id="hero-tab-0" class="hero-tab px-3 py-1.5 rounded-xl bg-white/25 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden shadow-sm">
@@ -251,63 +245,85 @@
 
       </div>
 
-      <!-- Horizontal Scrollable Real Image & Merchant Gallery -->
-      <div class="space-y-4">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Merchant Moments Across Africa</span>
-          <span class="text-xs text-slate-400 font-medium">Scroll to explore →</span>
+      <!-- VARIATION 2: SPLIT EDITORIAL CANVAS (Hauliin / Apple Style) -->
+      <div id="hero-style-minimal" class="hidden rounded-[2.5rem] bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 p-8 sm:p-12 lg:p-16 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-coral-50 dark:bg-coral-950/50 border border-coral-200 dark:border-coral-900 text-coral-600 dark:text-coral-400 text-xs font-bold">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-coral-500"></i>
+              <span>The Smart AI POS for African SMBs</span>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black text-slate-950 dark:text-white leading-[1.1] tracking-tight">
+              Simplified shopkeeping, <span class="text-coral-500">powered by AI</span>.
+            </h2>
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              From fast barcode sales to instant WhatsApp receipts, automatic restock alerts, and revenue intelligence — all in one offline system.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="app.html" class="px-8 py-3.5 bg-coral-500 hover:bg-coral-600 text-white font-bold text-sm rounded-2xl shadow-lg shadow-coral-500/25 transition-all">
+                Launch My Shop Now →
+              </a>
+              <a href="#what-we-do" class="px-6 py-3.5 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-sm rounded-2xl transition-all">
+                See What We Do
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-coral-500/20 bg-coral-500/10 p-2">
+              <img src="assets/images/african-hero-store-owner.jpg" alt="African store owner" class="w-full h-auto rounded-2xl object-cover" onerror="this.src='assets/hero-owner-BBtcWdiJ.png'" />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-none snap-x snap-mandatory">
-          
-          <!-- Photo 1: Provisions Store -->
-          <div class="min-w-[280px] sm:min-w-[320px] rounded-3xl overflow-hidden bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 shadow-sm snap-center group">
-            <div class="h-44 overflow-hidden relative">
-              <img src="assets/shopkeeper-C5MnsndJ.jpg" alt="Provisions retail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/shopkeeper-C5MnsndJ.jpg'" />
-              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-950/75 backdrop-blur-md text-[11px] font-bold text-white">Provisions Mart</span>
-            </div>
-            <div class="p-4">
-              <p class="font-bold text-sm text-slate-900 dark:text-white">Adesuwa's Global Mart</p>
-              <p class="text-xs text-slate-500 mt-0.5 font-medium">Ikeja, Lagos • ₦148,500 daily sales</p>
+      <!-- VARIATION 3: INTERACTIVE POS SIMULATOR HERO (Raycast / Stripe Style) -->
+      <div id="hero-style-mockup" class="hidden rounded-[2.5rem] bg-[#0F172A] text-white border border-slate-800 p-8 sm:p-12 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-coral-400">Interactive POS Terminal</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">
+              Test Olarvo One right here.
+            </h2>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Click any item below to simulate a real sale, generate itemized tax, and issue a digital receipt.
+            </p>
+            <div class="grid grid-cols-2 gap-2 text-xs pt-2">
+              <button onclick="addSimItem('Semovita (10kg)', 12000)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
+                <span class="font-bold">Semovita 10kg</span>
+                <span class="block text-coral-400 font-extrabold mt-0.5">₦12,000</span>
+              </button>
+              <button onclick="addSimItem('Milo Refill (800g)', 5300)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
+                <span class="font-bold">Milo Refill</span>
+                <span class="block text-coral-400 font-extrabold mt-0.5">₦5,300</span>
+              </button>
+              <button onclick="addSimItem('Oraimo Powerbank', 22000)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
+                <span class="font-bold">Oraimo 20k mAh</span>
+                <span class="block text-coral-400 font-extrabold mt-0.5">₦22,000</span>
+              </button>
+              <button onclick="addSimItem('Ankara Fabric (6Yds)', 16500)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
+                <span class="font-bold">Ankara 6Yds</span>
+                <span class="block text-coral-400 font-extrabold mt-0.5">₦16,500</span>
+              </button>
             </div>
           </div>
-
-          <!-- Photo 2: Fashion & Boutique -->
-          <div class="min-w-[280px] sm:min-w-[320px] rounded-3xl overflow-hidden bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 shadow-sm snap-center group">
-            <div class="h-44 overflow-hidden relative">
-              <img src="assets/boutique-679IVfsK.jpg" alt="Fashion boutique" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/boutique-679IVfsK.jpg'" />
-              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-950/75 backdrop-blur-md text-[11px] font-bold text-white">Fashion & Fabrics</span>
+          <div class="lg:col-span-6 bg-slate-900 rounded-2xl p-5 border border-slate-700 space-y-3">
+            <div class="flex justify-between items-center text-xs text-slate-400 font-bold border-b border-slate-800 pb-2">
+              <span>REGISTER CART</span>
+              <span id="sim-cart-count">0 items</span>
             </div>
-            <div class="p-4">
-              <p class="font-bold text-sm text-slate-900 dark:text-white">AfriChic Couture & Ankara</p>
-              <p class="text-xs text-slate-500 mt-0.5 font-medium">Osu, Accra • WhatsApp invoicing</p>
+            <div id="sim-cart-list" class="space-y-1.5 text-xs min-h-[100px] max-h-[140px] overflow-y-auto">
+              <p class="text-slate-500 italic text-center py-6">Tap products on the left to test sale!</p>
             </div>
-          </div>
-
-          <!-- Photo 3: Tech & Gadget Retail -->
-          <div class="min-w-[280px] sm:min-w-[320px] rounded-3xl overflow-hidden bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 shadow-sm snap-center group">
-            <div class="h-44 overflow-hidden relative">
-              <img src="assets/barber-tKGcd5N0.jpg" alt="Tech accessories" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/barber-tKGcd5N0.jpg'" />
-              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-slate-950/75 backdrop-blur-md text-[11px] font-bold text-white">Tech & Services</span>
-            </div>
-            <div class="p-4">
-              <p class="font-bold text-sm text-slate-900 dark:text-white">Nexus Gadgets Hub</p>
-              <p class="text-xs text-slate-500 mt-0.5 font-medium">Nairobi • Serialized inventory</p>
+            <div class="pt-3 border-t border-slate-800 flex justify-between items-center">
+              <div>
+                <span class="text-[10px] text-slate-400 uppercase font-bold">Total Due</span>
+                <p id="sim-cart-total" class="text-lg font-black text-coral-400">₦0.00</p>
+              </div>
+              <a href="app.html" class="px-4 py-2 bg-coral-500 text-white font-bold text-xs rounded-xl shadow">
+                Open Full POS App →
+              </a>
             </div>
           </div>
-
-          <!-- Photo 4: App Screen Mockup -->
-          <div class="min-w-[280px] sm:min-w-[320px] rounded-3xl overflow-hidden bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 shadow-sm snap-center group">
-            <div class="h-44 overflow-hidden relative">
-              <img src="assets/app-preview-DhT4qHiV.jpg" alt="App interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/images/app-preview-DhT4qHiV.jpg'" />
-              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-coral-500 text-[11px] font-bold text-white">App UI</span>
-            </div>
-            <div class="p-4">
-              <p class="font-bold text-sm text-slate-900 dark:text-white">Olarvo One POS & Web App</p>
-              <p class="text-xs text-slate-500 mt-0.5 font-medium">100% Offline IndexedDB Engine</p>
-            </div>
-          </div>
-
         </div>
       </div>
 
@@ -320,7 +336,6 @@
   <section id="what-we-do" class="py-20 lg:py-28 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
           What we do
@@ -333,16 +348,14 @@
       <!-- Sticky Stacking Cards Container -->
       <div class="flex flex-col gap-8 relative">
         
-        <!-- CARD 1: Sales & POS Receipts (Dark Obsidian Card) -->
+        <!-- CARD 1: Sales & POS Receipts -->
         <div class="sticky top-24 sm:top-28 rounded-[2.5rem] overflow-hidden shadow-2xl bg-[#0F172A] text-white border border-slate-800 transition-transform">
           <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
-            
             <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
               <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-slate-900">
                 <img src="assets/feature-receipt-narNZzeU.jpg" alt="Send receipt before they leave" class="w-full h-full object-cover" onerror="this.src='assets/images/feature-receipt-narNZzeU.jpg'" />
               </div>
             </div>
-
             <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
               <span class="text-xs font-bold text-coral-400 uppercase tracking-widest mb-1.5">Point of Sale</span>
               <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-white tracking-tight leading-tight">
@@ -351,7 +364,6 @@
               <p class="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
                 Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot. No paper, no thermal printer required.
               </p>
-
               <ul class="mt-6 grid gap-2.5">
                 <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white/[0.07] border border-white/10 text-white">
                   <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white">
@@ -373,20 +385,17 @@
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
 
-        <!-- CARD 2: Stock & Inventory (Warm Light Card) -->
+        <!-- CARD 2: Stock & Inventory -->
         <div class="sticky top-28 sm:top-32 rounded-[2.5rem] overflow-hidden shadow-2xl bg-white dark:bg-[#161B22] text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 transition-transform">
           <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
-            
             <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
               <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-slate-100 dark:bg-slate-900">
                 <img src="assets/feature-stock-Dgw1r1KG.jpg" alt="Shop owner checking stock levels" class="w-full h-full object-cover" onerror="this.src='assets/images/feature-stock-Dgw1r1KG.jpg'" />
               </div>
             </div>
-
             <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
               <span class="text-xs font-bold text-coral-500 uppercase tracking-widest mb-1.5">Inventory Tracking</span>
               <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
@@ -395,7 +404,6 @@
               <p class="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
                 Stock counts down with every sale, and you get a nudge the moment a fast mover is close to finishing. Always know what to reorder before the rush.
               </p>
-
               <ul class="mt-6 grid gap-2.5">
                 <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
                   <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-950">
@@ -417,20 +425,17 @@
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
 
-        <!-- CARD 3: Weekly AI Insights (Signature Coral Card) -->
+        <!-- CARD 3: Weekly AI Insights -->
         <div class="sticky top-32 sm:top-36 rounded-[2.5rem] overflow-hidden shadow-2xl bg-coral-500 text-white border border-coral-400 transition-transform">
           <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
-            
             <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
               <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-coral-600">
                 <img src="assets/feature-insights-uoVGa4An.jpg" alt="Business owner reading weekly AI insights" class="w-full h-full object-cover" onerror="this.src='assets/images/feature-insights-uoVGa4An.jpg'" />
               </div>
             </div>
-
             <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
               <span class="text-xs font-bold text-coral-100 uppercase tracking-widest mb-1.5">Intelligence</span>
               <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-white tracking-tight leading-tight">
@@ -439,7 +444,6 @@
               <p class="mt-3 text-sm sm:text-base text-coral-100 leading-relaxed font-normal">
                 Every week Olarvo One reads your sales and tells you what is working, what is slipping, and the one thing to do next to grow your profits.
               </p>
-
               <ul class="mt-6 grid gap-2.5">
                 <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white text-slate-900 shadow-sm">
                   <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-slate-900 text-white">
@@ -461,20 +465,17 @@
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
 
-        <!-- CARD 4: Invoicing & Debt CRM (Warm Cream Card) -->
+        <!-- CARD 4: Invoices & Debt CRM -->
         <div class="sticky top-36 sm:top-40 rounded-[2.5rem] overflow-hidden shadow-2xl bg-amber-50 dark:bg-[#1E293B] text-slate-900 dark:text-white border border-amber-200 dark:border-slate-700 transition-transform">
           <div class="grid grid-cols-1 md:grid-cols-2 items-stretch">
-            
             <div class="p-3 sm:p-4 min-h-[280px] sm:min-h-[420px] flex items-center">
               <div class="relative w-full h-full min-h-[260px] sm:min-h-[390px] rounded-[1.8rem] overflow-hidden shadow-inner bg-slate-200 dark:bg-slate-900">
                 <img src="assets/boutique-679IVfsK.jpg" alt="Fashion boutique and billing" class="w-full h-full object-cover" onerror="this.src='assets/images/boutique-679IVfsK.jpg'" />
               </div>
             </div>
-
             <div class="flex flex-col justify-center p-6 sm:p-10 lg:p-12">
               <span class="text-xs font-bold text-amber-700 dark:text-amber-400 uppercase tracking-widest mb-1.5">Billing & CRM</span>
               <h3 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
@@ -483,7 +484,6 @@
               <p class="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
                 Issue official invoices, track client deposits, and automatically follow up on unpaid balances with friendly WhatsApp reminders.
               </p>
-
               <ul class="mt-6 grid gap-2.5">
                 <li class="flex items-center gap-3.5 rounded-full px-4 py-2.5 text-xs sm:text-sm font-medium bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200">
                   <span class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white">
@@ -505,7 +505,6 @@
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
 
@@ -521,7 +520,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
-        <!-- Left: Sticky Title Block (Hauliin Style) -->
+        <!-- Left: Sticky Title Block -->
         <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-4">
           <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Getting Started</span>
           <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
@@ -538,11 +537,10 @@
           </div>
         </div>
 
-        <!-- Right: Vertical Numbered Connected Timeline (Hauliin Style) -->
+        <!-- Right: Vertical Numbered Connected Timeline -->
         <div class="lg:col-span-7">
           <ol class="relative flex flex-col space-y-2">
             
-            <!-- Step 01 -->
             <li class="relative flex items-start gap-6 py-8 border-b border-slate-200 dark:border-slate-800 group">
               <span class="font-black text-5xl sm:text-6xl lg:text-7xl text-coral-500 leading-none tracking-tighter shrink-0 select-none">
                 01
@@ -557,7 +555,6 @@
               </div>
             </li>
 
-            <!-- Step 02 -->
             <li class="relative flex items-start gap-6 py-8 border-b border-slate-200 dark:border-slate-800 group">
               <span class="font-black text-5xl sm:text-6xl lg:text-7xl text-coral-500 leading-none tracking-tighter shrink-0 select-none">
                 02
@@ -572,7 +569,6 @@
               </div>
             </li>
 
-            <!-- Step 03 -->
             <li class="relative flex items-start gap-6 py-8 border-b border-slate-200 dark:border-slate-800 group">
               <span class="font-black text-5xl sm:text-6xl lg:text-7xl text-coral-500 leading-none tracking-tighter shrink-0 select-none">
                 03
@@ -587,7 +583,6 @@
               </div>
             </li>
 
-            <!-- Step 04 -->
             <li class="relative flex items-start gap-6 py-8 group">
               <span class="font-black text-5xl sm:text-6xl lg:text-7xl text-coral-500 leading-none tracking-tighter shrink-0 select-none">
                 04
@@ -643,7 +638,7 @@
             <input id="roi-margin-slider" type="range" min="10" max="60" step="1" value="30" oninput="calculateROI()" class="w-full accent-coral-500 cursor-pointer" />
           </div>
 
-          <div class="p-3.5 bg-white dark:bg-slate-850 rounded-2xl border border-slate-200 dark:border-slate-750 text-xs text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
+          <div class="p-3.5 bg-white dark:bg-slate-850 rounded-2xl border border-slate-200 dark:border-slate-755 text-xs text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
             💡 African retailers using Olarvo One save <strong>15+ hours</strong> monthly on manual stock bookkeeping and prevent up to <strong>₦135,000</strong> in lost stockout sales.
           </div>
         </div>
@@ -751,7 +746,7 @@
           </p>
         </details>
 
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Do my customers need an app to receive receipts?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
@@ -761,7 +756,7 @@
           </p>
         </details>
 
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Can I export my data anytime?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
@@ -771,7 +766,7 @@
           </p>
         </details>
 
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Is my business data private?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
@@ -821,6 +816,28 @@
 
   <!-- Scripts -->
   <script>
+    // Hero Switcher logic for user preview
+    function setHeroStyle(style) {
+      document.getElementById('hero-style-coral').classList.add('hidden');
+      document.getElementById('hero-style-minimal').classList.add('hidden');
+      document.getElementById('hero-style-mockup').classList.add('hidden');
+
+      ['coral', 'minimal', 'mockup'].forEach(s => {
+        const btn = document.getElementById(`btn-hero-${s}`);
+        if (btn) {
+          btn.className = 'px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all';
+        }
+      });
+
+      const activeBtn = document.getElementById(`btn-hero-${style}`);
+      if (activeBtn) {
+        activeBtn.className = 'px-3 py-1 rounded-lg bg-white dark:bg-slate-700 text-coral-600 dark:text-coral-400 shadow-sm transition-all font-bold';
+      }
+
+      const activeHero = document.getElementById(`hero-style-${style}`);
+      if (activeHero) activeHero.classList.remove('hidden');
+    }
+
     const HERO_SLIDES = [
       {
         eyebrow: "SALES & RECEIPTS",
@@ -891,7 +908,7 @@
         const imgBox = document.getElementById('hero-img-box');
         if (imgBox) {
           if (slide.isCutout) {
-            imgBox.innerHTML = `<img id="hero-main-img" src="${slide.img}" alt="${slide.alt}" class="w-full h-auto object-contain max-h-[420px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />`;
+            imgBox.innerHTML = `<img id="hero-main-img" src="${slide.img}" alt="${slide.alt}" class="w-full h-auto object-contain max-h-[440px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />`;
           } else {
             imgBox.innerHTML = `
               <div class="rounded-3xl overflow-hidden shadow-2xl border-2 border-white/40 w-full max-h-[380px] bg-slate-900 animate-float-hero">
@@ -994,6 +1011,24 @@
     function resumeHeroTimer() {
       isPaused = false;
       progressStartTime = Date.now();
+    }
+
+    // POS Simulator helper
+    let simItems = [];
+    function addSimItem(name, price) {
+      simItems.push({ name, price });
+      const list = document.getElementById('sim-cart-list');
+      const totalEl = document.getElementById('sim-cart-total');
+      const countEl = document.getElementById('sim-cart-count');
+      if (!list || !totalEl) return;
+
+      countEl.innerText = `${simItems.length} items`;
+      let total = 0;
+      list.innerHTML = simItems.map(i => {
+        total += i.price;
+        return `<div class="flex justify-between items-center p-1.5 rounded bg-slate-800"><span>${i.name}</span><span class="font-bold text-coral-400">₦${i.price.toLocaleString()}</span></div>`;
+      }).join('');
+      totalEl.innerText = '₦' + total.toLocaleString() + '.00';
     }
 
     function calculateROI() {
