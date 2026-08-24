@@ -119,36 +119,17 @@
   </nav>
 
   <!-- ========================================================================= -->
-  <!-- HERO SECTION: Signature Coral Canvas with Golden-Ratio Proportions & Auto-Play -->
+  <!-- HERO SECTION: Signature Coral Stage + Hauliin-Style 3-Feature Bar -->
   <!-- ========================================================================= -->
-  <section class="py-6 sm:py-10 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto">
+  <section class="pt-6 pb-12 sm:pt-8 sm:pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto space-y-6">
 
-      <!-- Hero Style Selector Bar -->
-      <div class="flex items-center justify-between mb-4 px-2">
-        <div class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Live Hero Preview</span>
-        </div>
-        <div class="flex items-center gap-1.5 p-1 bg-slate-200/80 dark:bg-slate-800 rounded-xl text-xs font-semibold">
-          <button onclick="setHeroStyle('coral')" id="btn-hero-coral" class="px-3 py-1 rounded-lg bg-white dark:bg-slate-700 text-coral-600 dark:text-coral-400 shadow-sm transition-all font-bold">
-            1. Signature Coral Stage
-          </button>
-          <button onclick="setHeroStyle('minimal')" id="btn-hero-minimal" class="px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
-            2. Split Editorial Canvas
-          </button>
-          <button onclick="setHeroStyle('mockup')" id="btn-hero-mockup" class="px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">
-            3. Interactive POS Demo
-          </button>
-        </div>
-      </div>
-
-      <!-- VARIATION 1: SIGNATURE CORAL STAGE -->
-      <div id="hero-style-coral" class="rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()">
+      <!-- Main Signature Coral Hero Stage (Auto-Rotating with Dynamic Photography) -->
+      <div id="hero-carousel-card" class="rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center px-6 py-12 sm:px-12 sm:py-16 lg:px-16 lg:py-16 min-h-[500px]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center px-6 py-12 sm:px-12 sm:py-16 lg:px-16 lg:py-16 min-h-[500px]">
           
-          <!-- Left: Rotating Typography -->
+          <!-- Left: Rotating Typography & Action Controls -->
           <div id="hero-left-col" class="lg:col-span-7 z-10 text-left hero-content-fade">
             
             <div id="hero-eyebrow" class="inline-flex items-center gap-2 text-white/90 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-4">
@@ -171,7 +152,7 @@
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
               <a href="#what-we-do" class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/15 hover:bg-white/25 border border-white/40 text-white font-semibold text-sm rounded-2xl transition-all">
-                <span>Explore what we do</span>
+                <span>Explore all features</span>
               </a>
             </div>
 
@@ -183,12 +164,12 @@
 
           </div>
 
-          <!-- Right: Cutout Photo & Floating Badges -->
+          <!-- Right: Real Cutout Photography & Floating Live Chips -->
           <div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end min-h-[360px] sm:min-h-[420px]">
             <div id="hero-right-col" class="relative w-full max-w-xs sm:max-w-sm flex items-end justify-center hero-content-fade">
               
               <div id="hero-img-box" class="w-full flex items-end justify-center">
-                <img id="hero-main-img" src="assets/hero-owner-BBtcWdiJ.png" alt="African shop owner" class="w-full h-auto object-contain max-h-[440px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />
+                <img id="hero-main-img" src="assets/hero-owner-BBtcWdiJ.png" alt="African small business owner" class="w-full h-auto object-contain max-h-[440px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />
               </div>
 
               <!-- Floating Card Top -->
@@ -247,85 +228,40 @@
 
       </div>
 
-      <!-- VARIATION 2: SPLIT EDITORIAL CANVAS -->
-      <div id="hero-style-minimal" class="hidden rounded-[2.5rem] bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 p-8 sm:p-12 lg:p-16 shadow-xl">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-coral-50 dark:bg-coral-950/50 border border-coral-200 dark:border-coral-900 text-coral-600 dark:text-coral-400 text-xs font-bold">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-coral-500"></i>
-              <span>The Smart AI POS for African SMBs</span>
-            </div>
-            <h2 class="text-4xl sm:text-5xl font-black text-slate-950 dark:text-white leading-[1.1] tracking-tight">
-              Simplified shopkeeping, <span class="text-coral-500">powered by AI</span>.
-            </h2>
-            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-              From fast barcode sales to instant WhatsApp receipts, automatic restock alerts, and revenue intelligence — all in one offline system.
-            </p>
-            <div class="flex flex-wrap gap-4 pt-2">
-              <a href="app.html" class="px-8 py-3.5 bg-coral-500 hover:bg-coral-600 text-white font-bold text-sm rounded-2xl shadow-lg shadow-coral-500/25 transition-all">
-                Launch My Shop Now →
-              </a>
-              <a href="#what-we-do" class="px-6 py-3.5 bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-sm rounded-2xl transition-all">
-                See What We Do
-              </a>
+      <!-- Hauliin-Style 3-Column Bordered Highlight Bar (Under Hero) -->
+      <div class="rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-[#161B22] shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200/80 dark:divide-slate-800">
+          
+          <div class="flex items-center gap-4 px-6 py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 group-hover:scale-110 transition-transform">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </span>
+            <div>
+              <p class="text-sm font-bold text-slate-900 dark:text-white">Instant WhatsApp receipts</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Sent before customer walks away</p>
             </div>
           </div>
-          <div class="lg:col-span-5 relative">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-coral-500/20 bg-coral-500/10 p-2">
-              <img src="assets/images/african-hero-store-owner.jpg" alt="African store owner" class="w-full h-auto rounded-2xl object-cover" onerror="this.src='assets/hero-owner-BBtcWdiJ.png'" />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- VARIATION 3: INTERACTIVE POS SIMULATOR HERO -->
-      <div id="hero-style-mockup" class="hidden rounded-[2.5rem] bg-[#0F172A] text-white border border-slate-800 p-8 sm:p-12 shadow-2xl">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs font-bold uppercase tracking-wider text-coral-400">Interactive POS Terminal</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">
-              Test Olarvo One right here.
-            </h2>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Click any item below to simulate a real sale, generate itemized tax, and issue a digital receipt.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs pt-2">
-              <button onclick="addSimItem('Semovita (10kg)', 12000)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
-                <span class="font-bold">Semovita 10kg</span>
-                <span class="block text-coral-400 font-extrabold mt-0.5">₦12,000</span>
-              </button>
-              <button onclick="addSimItem('Milo Refill (800g)', 5300)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
-                <span class="font-bold">Milo Refill</span>
-                <span class="block text-coral-400 font-extrabold mt-0.5">₦5,300</span>
-              </button>
-              <button onclick="addSimItem('Oraimo Powerbank', 22000)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
-                <span class="font-bold">Oraimo 20k mAh</span>
-                <span class="block text-coral-400 font-extrabold mt-0.5">₦22,000</span>
-              </button>
-              <button onclick="addSimItem('Ankara Fabric (6Yds)', 16500)" class="p-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-left">
-                <span class="font-bold">Ankara 6Yds</span>
-                <span class="block text-coral-400 font-extrabold mt-0.5">₦16,500</span>
-              </button>
+          <div class="flex items-center gap-4 px-6 py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 group-hover:scale-110 transition-transform">
+              <i data-lucide="wifi-off" class="w-4 h-4"></i>
+            </span>
+            <div>
+              <p class="text-sm font-bold text-slate-900 dark:text-white">100% Offline-ready POS</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Zero internet required for sales</p>
             </div>
           </div>
-          <div class="lg:col-span-6 bg-slate-900 rounded-2xl p-5 border border-slate-700 space-y-3">
-            <div class="flex justify-between items-center text-xs text-slate-400 font-bold border-b border-slate-800 pb-2">
-              <span>REGISTER CART</span>
-              <span id="sim-cart-count">0 items</span>
-            </div>
-            <div id="sim-cart-list" class="space-y-1.5 text-xs min-h-[100px] max-h-[140px] overflow-y-auto">
-              <p class="text-slate-500 italic text-center py-6">Tap products on the left to test sale!</p>
-            </div>
-            <div class="pt-3 border-t border-slate-800 flex justify-between items-center">
-              <div>
-                <span class="text-[10px] text-slate-400 uppercase font-bold">Total Due</span>
-                <p id="sim-cart-total" class="text-lg font-black text-coral-400">₦0.00</p>
-              </div>
-              <a href="app.html" class="px-4 py-2 bg-coral-500 text-white font-bold text-xs rounded-xl shadow">
-                Open Full POS App →
-              </a>
+
+          <div class="flex items-center gap-4 px-6 py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 group-hover:scale-110 transition-transform">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </span>
+            <div>
+              <p class="text-sm font-bold text-slate-900 dark:text-white">Weekly AI Business Insights</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Localized pricing & stock forecasts</p>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -521,7 +457,6 @@
   <section id="what-you-get" class="py-20 lg:py-24 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Header -->
       <div class="text-center max-w-2xl mx-auto mb-14">
         <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
           What you get
@@ -531,11 +466,10 @@
         </p>
       </div>
 
-      <!-- 3x2 Grid (Hauliin Style with Clean Borders) -->
+      <!-- 3x2 Grid -->
       <div class="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#161B22] shadow-sm mb-12">
         <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-800">
           
-          <!-- Row 1, Col 1 -->
           <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
             <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
@@ -545,7 +479,6 @@
             </span>
           </div>
 
-          <!-- Row 1, Col 2 -->
           <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
             <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
               <i data-lucide="wifi-off" class="w-4 h-4"></i>
@@ -555,7 +488,6 @@
             </span>
           </div>
 
-          <!-- Row 1, Col 3 -->
           <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
             <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
               <i data-lucide="alert-triangle" class="w-4 h-4"></i>
@@ -569,7 +501,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x border-t divide-slate-200 dark:divide-slate-800 border-slate-200 dark:border-slate-800">
           
-          <!-- Row 2, Col 1 -->
           <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
             <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
               <i data-lucide="trending-up" class="w-4 h-4"></i>
@@ -579,7 +510,6 @@
             </span>
           </div>
 
-          <!-- Row 2, Col 2 -->
           <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
             <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
               <i data-lucide="users" class="w-4 h-4"></i>
@@ -589,7 +519,6 @@
             </span>
           </div>
 
-          <!-- Row 2, Col 3 -->
           <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
             <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
               <i data-lucide="sparkles" class="w-4 h-4"></i>
@@ -602,7 +531,7 @@
         </div>
       </div>
 
-      <!-- Wide Panoramic Real Image (Hauliin Style Wide Photography Hero) -->
+      <!-- Panoramic Real Image Frame -->
       <div class="relative w-full overflow-hidden rounded-[2.5rem] shadow-2xl border border-slate-200 dark:border-slate-800 aspect-[21/9] sm:aspect-[21/8] max-h-[380px] bg-slate-900 group">
         <img src="assets/images/african-boutique-checkout.jpg" alt="Vibrant African retail boutique checkout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='assets/boutique-679IVfsK.jpg'" />
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent flex items-end p-6 sm:p-10">
@@ -926,27 +855,6 @@
 
   <!-- Scripts -->
   <script>
-    function setHeroStyle(style) {
-      document.getElementById('hero-style-coral').classList.add('hidden');
-      document.getElementById('hero-style-minimal').classList.add('hidden');
-      document.getElementById('hero-style-mockup').classList.add('hidden');
-
-      ['coral', 'minimal', 'mockup'].forEach(s => {
-        const btn = document.getElementById(`btn-hero-${s}`);
-        if (btn) {
-          btn.className = 'px-3 py-1 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all';
-        }
-      });
-
-      const activeBtn = document.getElementById(`btn-hero-${style}`);
-      if (activeBtn) {
-        activeBtn.className = 'px-3 py-1 rounded-lg bg-white dark:bg-slate-700 text-coral-600 dark:text-coral-400 shadow-sm transition-all font-bold';
-      }
-
-      const activeHero = document.getElementById(`hero-style-${style}`);
-      if (activeHero) activeHero.classList.remove('hidden');
-    }
-
     const HERO_SLIDES = [
       {
         eyebrow: "SALES & RECEIPTS",
@@ -1120,23 +1028,6 @@
     function resumeHeroTimer() {
       isPaused = false;
       progressStartTime = Date.now();
-    }
-
-    let simItems = [];
-    function addSimItem(name, price) {
-      simItems.push({ name, price });
-      const list = document.getElementById('sim-cart-list');
-      const totalEl = document.getElementById('sim-cart-total');
-      const countEl = document.getElementById('sim-cart-count');
-      if (!list || !totalEl) return;
-
-      countEl.innerText = `${simItems.length} items`;
-      let total = 0;
-      list.innerHTML = simItems.map(i => {
-        total += i.price;
-        return `<div class="flex justify-between items-center p-1.5 rounded bg-slate-800"><span>${i.name}</span><span class="font-bold text-coral-400">₦${i.price.toLocaleString()}</span></div>`;
-      }).join('');
-      totalEl.innerText = '₦' + total.toLocaleString() + '.00';
     }
 
     function calculateROI() {
