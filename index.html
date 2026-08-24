@@ -65,6 +65,7 @@
         <!-- Desktop Navigation Links -->
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
           <a href="#what-we-do" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">What we do</a>
+          <a href="#what-you-get" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">What you get</a>
           <a href="#how-it-works" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">How it works</a>
           <a href="#calculator" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Profit Calculator</a>
           <a href="#stories" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Who it's for</a>
@@ -105,6 +106,7 @@
     <!-- Mobile Dropdown -->
     <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-6 border-t border-slate-200 dark:border-slate-800 space-y-3 bg-[#FAF9F6] dark:bg-[#0D1117]">
       <a href="#what-we-do" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">What we do</a>
+      <a href="#what-you-get" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">What you get</a>
       <a href="#how-it-works" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">How it works</a>
       <a href="#calculator" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Profit Calculator</a>
       <a href="#stories" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Who it's for</a>
@@ -122,7 +124,7 @@
   <section class="py-6 sm:py-10 px-4 sm:px-6 lg:px-8">
     <div class="max-w-6xl mx-auto">
 
-      <!-- Hero Style Selector Bar (Allows User to Preview Hero Variations) -->
+      <!-- Hero Style Selector Bar -->
       <div class="flex items-center justify-between mb-4 px-2">
         <div class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -141,7 +143,7 @@
         </div>
       </div>
 
-      <!-- VARIATION 1: SIGNATURE CORAL STAGE (Clean, Refined, Golden Ratio) -->
+      <!-- VARIATION 1: SIGNATURE CORAL STAGE -->
       <div id="hero-style-coral" class="rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center px-6 py-12 sm:px-12 sm:py-16 lg:px-16 lg:py-16 min-h-[500px]">
@@ -169,7 +171,7 @@
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
               <a href="#what-we-do" class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/15 hover:bg-white/25 border border-white/40 text-white font-semibold text-sm rounded-2xl transition-all">
-                <span>Explore all features</span>
+                <span>Explore what we do</span>
               </a>
             </div>
 
@@ -245,7 +247,7 @@
 
       </div>
 
-      <!-- VARIATION 2: SPLIT EDITORIAL CANVAS (Hauliin / Apple Style) -->
+      <!-- VARIATION 2: SPLIT EDITORIAL CANVAS -->
       <div id="hero-style-minimal" class="hidden rounded-[2.5rem] bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 p-8 sm:p-12 lg:p-16 shadow-xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div class="lg:col-span-7 space-y-6">
@@ -276,7 +278,7 @@
         </div>
       </div>
 
-      <!-- VARIATION 3: INTERACTIVE POS SIMULATOR HERO (Raycast / Stripe Style) -->
+      <!-- VARIATION 3: INTERACTIVE POS SIMULATOR HERO -->
       <div id="hero-style-mockup" class="hidden rounded-[2.5rem] bg-[#0F172A] text-white border border-slate-800 p-8 sm:p-12 shadow-2xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-6 space-y-5">
@@ -514,9 +516,117 @@
   </section>
 
   <!-- ========================================================================= -->
+  <!-- "WHAT YOU GET" SECTION (Hauliin.com-Style 6-Grid + Wide African Panorama) -->
+  <!-- ========================================================================= -->
+  <section id="what-you-get" class="py-20 lg:py-24 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-950 dark:text-white tracking-tight leading-tight">
+          What you get
+        </h2>
+        <p class="mt-3 text-base sm:text-lg font-medium text-slate-600 dark:text-slate-400">
+          Everything you need to sell fast, protect your inventory, and unlock intelligent business growth.
+        </p>
+      </div>
+
+      <!-- 3x2 Grid (Hauliin Style with Clean Borders) -->
+      <div class="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#161B22] shadow-sm mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-slate-800">
+          
+          <!-- Row 1, Col 1 -->
+          <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-900 dark:text-white tracking-tight">
+              Instant WhatsApp receipts
+            </span>
+          </div>
+
+          <!-- Row 1, Col 2 -->
+          <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
+              <i data-lucide="wifi-off" class="w-4 h-4"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-900 dark:text-white tracking-tight">
+              100% Offline-ready database
+            </span>
+          </div>
+
+          <!-- Row 1, Col 3 -->
+          <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
+              <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-900 dark:text-white tracking-tight">
+              Low-stock reorder warnings
+            </span>
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x border-t divide-slate-200 dark:divide-slate-800 border-slate-200 dark:border-slate-800">
+          
+          <!-- Row 2, Col 1 -->
+          <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
+              <i data-lucide="trending-up" class="w-4 h-4"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-900 dark:text-white tracking-tight">
+              Real-time margin calculation
+            </span>
+          </div>
+
+          <!-- Row 2, Col 2 -->
+          <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
+              <i data-lucide="users" class="w-4 h-4"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-900 dark:text-white tracking-tight">
+              Customer debt & credit ledger
+            </span>
+          </div>
+
+          <!-- Row 2, Col 3 -->
+          <div class="group flex min-h-[90px] items-center gap-4 p-6 sm:px-8 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50">
+            <span class="inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-coral-500 text-white shadow-md shadow-coral-500/20 transition-transform group-hover:scale-110">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </span>
+            <span class="text-sm font-semibold text-slate-900 dark:text-white tracking-tight">
+              Weekly AI business advisor
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Wide Panoramic Real Image (Hauliin Style Wide Photography Hero) -->
+      <div class="relative w-full overflow-hidden rounded-[2.5rem] shadow-2xl border border-slate-200 dark:border-slate-800 aspect-[21/9] sm:aspect-[21/8] max-h-[380px] bg-slate-900 group">
+        <img src="assets/images/african-boutique-checkout.jpg" alt="Vibrant African retail boutique checkout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='assets/boutique-679IVfsK.jpg'" />
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent flex items-end p-6 sm:p-10">
+          <div class="text-white max-w-xl">
+            <span class="px-3 py-1 rounded-full bg-coral-500 text-white text-[11px] font-extrabold uppercase tracking-wider mb-2 inline-block">
+              Modern African Commerce
+            </span>
+            <h3 class="text-xl sm:text-2xl lg:text-3xl font-black">
+              Built for retail shops that never stop.
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 mt-1 font-normal">
+              Empowering merchants across Lagos, Accra, Nairobi, and Johannesburg with frictionless digital tooling.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
   <!-- "HOW IT WORKS" SECTION: Hauliin.com-Style Sticky Heading + Numbered Timeline -->
   <!-- ========================================================================= -->
-  <section id="how-it-works" class="py-24 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+  <section id="how-it-works" class="py-24 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
@@ -549,7 +659,7 @@
                 <h3 class="text-xl sm:text-2xl font-black text-slate-950 dark:text-white tracking-tight">
                   Add Your Products
                 </h3>
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                   Enter your product name, category, cost price, and selling price. Add items one by one or import your catalog in seconds.
                 </p>
               </div>
@@ -563,7 +673,7 @@
                 <h3 class="text-xl sm:text-2xl font-black text-slate-950 dark:text-white tracking-tight">
                   Record Every Sale in Two Taps
                 </h3>
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                   Select items from your screen, choose the payment method (Cash, Bank Transfer, POS Machine, or Mobile Money), and hit checkout.
                 </p>
               </div>
@@ -577,7 +687,7 @@
                 <h3 class="text-xl sm:text-2xl font-black text-slate-950 dark:text-white tracking-tight">
                   Send Branded WhatsApp Receipts
                 </h3>
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                   Dispatch professional digital receipts directly to your customer's WhatsApp before they leave your store. No paper receipts wasted.
                 </p>
               </div>
@@ -591,7 +701,7 @@
                 <h3 class="text-xl sm:text-2xl font-black text-slate-950 dark:text-white tracking-tight">
                   Receive Weekly AI Insights & Restock Alerts
                 </h3>
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
                   Every week, Olarvo One analyzes your transactions and sends you practical advice on pricing, best sellers, and low-stock items.
                 </p>
               </div>
@@ -607,7 +717,7 @@
   <!-- ========================================================================= -->
   <!-- INTERACTIVE PROFIT CALCULATOR SECTION -->
   <!-- ========================================================================= -->
-  <section id="calculator" class="py-20 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+  <section id="calculator" class="py-20 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
@@ -618,7 +728,7 @@
         <p class="text-sm text-slate-500 mt-2 font-normal">Adjust your daily revenue and gross margin to see projected returns.</p>
       </div>
 
-      <div class="p-8 sm:p-10 rounded-[2.5rem] bg-[#FAF9F6] dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="p-8 sm:p-10 rounded-[2.5rem] bg-white dark:bg-[#161B22] border border-slate-200 dark:border-slate-800 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
         <!-- Sliders -->
         <div class="space-y-6">
@@ -638,7 +748,7 @@
             <input id="roi-margin-slider" type="range" min="10" max="60" step="1" value="30" oninput="calculateROI()" class="w-full accent-coral-500 cursor-pointer" />
           </div>
 
-          <div class="p-3.5 bg-white dark:bg-slate-850 rounded-2xl border border-slate-200 dark:border-slate-755 text-xs text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
+          <div class="p-3.5 bg-slate-50 dark:bg-slate-850 rounded-2xl border border-slate-200 dark:border-slate-750 text-xs text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
             💡 African retailers using Olarvo One save <strong>15+ hours</strong> monthly on manual stock bookkeeping and prevent up to <strong>₦135,000</strong> in lost stockout sales.
           </div>
         </div>
@@ -672,7 +782,7 @@
   <!-- ========================================================================= -->
   <!-- SECTORS SECTION: Built for every kind of African shop -->
   <!-- ========================================================================= -->
-  <section id="stories" class="py-20 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+  <section id="stories" class="py-20 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-12">
@@ -725,7 +835,7 @@
   <!-- ========================================================================= -->
   <!-- FAQ SECTION -->
   <!-- ========================================================================= -->
-  <section id="faq" class="py-20 bg-white dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
+  <section id="faq" class="py-20 bg-[#FAF9F6] dark:bg-[#0D1117] border-t border-slate-200/80 dark:border-slate-800">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="mb-12">
@@ -736,12 +846,12 @@
 
       <div class="space-y-4">
         
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Can I use Olarvo One offline?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
           </summary>
-          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed font-normal">
             Yes. Everything runs locally on your device. Sales, products, and receipts update immediately without an active internet connection.
           </p>
         </details>
@@ -751,7 +861,7 @@
             <span>Do my customers need an app to receive receipts?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
           </summary>
-          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed font-normal">
             No. They receive a standard message with a PDF receipt or invoice on WhatsApp or SMS. There is nothing for them to install.
           </p>
         </details>
@@ -761,7 +871,7 @@
             <span>Can I export my data anytime?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
           </summary>
-          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed font-normal">
             Anytime. Export sales, products, customers, and financial summaries as CSV from Settings with a single click.
           </p>
         </details>
@@ -771,7 +881,7 @@
             <span>Is my business data private?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
           </summary>
-          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-3 leading-relaxed font-normal">
             100% private. We do not sell merchant data or run advertising trackers. Your numbers stay strictly yours.
           </p>
         </details>
@@ -816,7 +926,6 @@
 
   <!-- Scripts -->
   <script>
-    // Hero Switcher logic for user preview
     function setHeroStyle(style) {
       document.getElementById('hero-style-coral').classList.add('hidden');
       document.getElementById('hero-style-minimal').classList.add('hidden');
@@ -1013,7 +1122,6 @@
       progressStartTime = Date.now();
     }
 
-    // POS Simulator helper
     let simItems = [];
     function addSimItem(name, price) {
       simItems.push({ name, price });
