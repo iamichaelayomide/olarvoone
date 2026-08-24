@@ -116,15 +116,15 @@
     </div>
   </nav>
 
-  <!-- Signature Coral Hero Showcase (Exact Match to Reference with Refined Proportions) -->
+  <!-- Signature Coral Hero Showcase (Auto-Rotating with Live Progress Timers & Pause on Hover) -->
   <section class="py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative">
+    <div id="hero-carousel-card" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()" class="max-w-6xl mx-auto rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none">
       
       <!-- Slide Content Container -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14 min-h-[480px]">
         
-        <!-- Left: Typographic Presentation (Spread Out with Flawless Line Wrapping) -->
-        <div class="lg:col-span-7 z-10 text-left">
+        <!-- Left: Typographic Presentation with smooth transition -->
+        <div id="hero-left-col" class="lg:col-span-7 z-10 text-left hero-content-fade">
           
           <!-- Eyebrow -->
           <div id="hero-eyebrow" class="inline-flex items-center gap-2 text-white/90 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-4">
@@ -132,7 +132,7 @@
             <span>SALES & RECEIPTS</span>
           </div>
 
-          <!-- Main Power Title (Graceful line breaks, no high awkward cramp) -->
+          <!-- Main Power Title -->
           <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-[52px] font-black text-white leading-[1.08] tracking-tight mb-5">
             Sell. Record. Get paid.
             <span class="block text-white/95 font-extrabold mt-1">All from your phone.</span>
@@ -163,30 +163,30 @@
 
         </div>
 
-        <!-- Right: Shop Owner Portrait & Floating Badge Overlay -->
-        <div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end min-h-[380px] sm:min-h-[440px]">
+        <!-- Right: Shop Owner Portrait & Floating Dynamic Overlay Badges -->
+        <div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end min-h-[360px] sm:min-h-[420px]">
           
           <div class="relative w-full max-w-xs sm:max-w-sm flex items-end justify-center">
             
             <!-- Cutout Image with seamless blend -->
             <img id="hero-main-img" src="assets/hero-owner-BBtcWdiJ.png" alt="African small business owner using Olarvo One" class="w-full h-auto object-contain max-h-[440px] drop-shadow-2xl" onerror="this.src='assets/images/hero-owner-BBtcWdiJ.png'" />
 
-            <!-- Floating Card Top: Today's Revenue -->
+            <!-- Floating Card Top -->
             <div id="hero-chip-top" class="absolute top-2 left-0 sm:-left-4 z-20 bg-slate-950/80 backdrop-blur-md text-white px-3.5 py-2 rounded-xl shadow-2xl border border-white/10 flex flex-col items-start animate-float-1">
-              <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold flex items-center gap-1">
+              <span id="hero-chip-top-tag" class="text-[9px] uppercase tracking-wider text-slate-400 font-bold flex items-center gap-1">
                 <i data-lucide="calendar" class="w-3 h-3 text-coral-400"></i> TODAY
               </span>
-              <span class="text-sm font-black tracking-tight text-white mt-0.5">₦148,500</span>
+              <span id="hero-chip-top-val" class="text-sm font-black tracking-tight text-white mt-0.5">₦148,500</span>
             </div>
 
-            <!-- Floating Card Bottom: Receipt Sent -->
+            <!-- Floating Card Bottom -->
             <div id="hero-chip-bottom" class="absolute bottom-4 right-0 sm:-right-4 z-20 bg-white text-slate-900 px-4 py-2.5 rounded-2xl shadow-2xl flex items-center gap-3 animate-float-2">
-              <div class="w-8 h-8 rounded-xl bg-coral-50 text-coral-500 flex items-center justify-center font-bold flex-shrink-0">
+              <div id="hero-chip-bottom-icon" class="w-8 h-8 rounded-xl bg-coral-50 text-coral-500 flex items-center justify-center font-bold flex-shrink-0">
                 <i data-lucide="send" class="w-4 h-4"></i>
               </div>
               <div class="text-left">
-                <p class="text-xs font-black text-slate-900">Receipt sent</p>
-                <p class="text-[10px] text-slate-500 font-medium">PDF attached</p>
+                <p id="hero-chip-bottom-title" class="text-xs font-black text-slate-900">Receipt sent</p>
+                <p id="hero-chip-bottom-sub" class="text-[10px] text-slate-500 font-medium">PDF attached</p>
               </div>
             </div>
 
@@ -196,26 +196,48 @@
 
       </div>
 
-      <!-- Slide Controls Bottom Bar -->
-      <div class="px-8 py-3.5 bg-black/10 border-t border-white/10 flex items-center justify-between text-xs text-white/80">
-        <div class="flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-white"></span>
-          <span class="font-medium">100% Offline Local Storage Backing</span>
+      <!-- Slide Navigation Bar & Progress Tabs (Interactive & Auto-Advancing) -->
+      <div class="px-6 sm:px-8 py-3.5 bg-black/15 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-white/80">
+        
+        <!-- Clickable Feature Slide Tabs with Progress Lines -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+          
+          <button onclick="goToHeroSlide(0)" id="hero-tab-0" class="hero-tab px-3 py-1.5 rounded-xl bg-white/20 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden">
+            <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+            <span>1. Sales & POS</span>
+            <div id="hero-progress-0" class="absolute bottom-0 left-0 h-0.5 bg-white w-0 hero-progress-fill"></div>
+          </button>
+
+          <button onclick="goToHeroSlide(1)" id="hero-tab-1" class="hero-tab px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden">
+            <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+            <span>2. Stock & Inventory</span>
+            <div id="hero-progress-1" class="absolute bottom-0 left-0 h-0.5 bg-white w-0 hero-progress-fill"></div>
+          </button>
+
+          <button onclick="goToHeroSlide(2)" id="hero-tab-2" class="hero-tab px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden">
+            <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+            <span>3. Weekly AI Insights</span>
+            <div id="hero-progress-2" class="absolute bottom-0 left-0 h-0.5 bg-white w-0 hero-progress-fill"></div>
+          </button>
+
         </div>
+
+        <!-- Manual Navigation Controls -->
         <div class="flex items-center gap-2">
-          <button onclick="prevHeroSlide()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 flex items-center justify-center text-white transition-colors" title="Previous Slide">
+          <button onclick="prevHeroSlide()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 flex items-center justify-center text-white active:scale-95 transition-all" title="Previous Slide">
             <i data-lucide="chevron-left" class="w-4 h-4"></i>
           </button>
-          <button onclick="nextHeroSlide()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 flex items-center justify-center text-white transition-colors" title="Next Slide">
+          <button onclick="nextHeroSlide()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 flex items-center justify-center text-white active:scale-95 transition-all" title="Next Slide">
             <i data-lucide="chevron-right" class="w-4 h-4"></i>
           </button>
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- Section 2: Up and running in minutes (Clean Layout Matching User's Exact Screenshot) -->
+  <!-- Section 2: Up and running in minutes -->
   <section id="how-it-works" class="py-20 lg:py-24 bg-[#FAF9F6] dark:bg-[#0D1117]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -227,7 +249,6 @@
 
       <!-- 3-Step Clean Horizontal Sequence -->
       <div class="relative mb-12">
-        <!-- Connecting Line -->
         <div class="hidden sm:block absolute top-5 left-12 right-12 h-0.5 bg-coral-200 dark:bg-coral-950 -z-0"></div>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 relative z-10">
@@ -423,7 +444,7 @@
           </p>
         </details>
 
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Do my customers need an app to receive receipts?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
@@ -433,7 +454,7 @@
           </p>
         </details>
 
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Can I export my data anytime?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
@@ -443,7 +464,7 @@
           </p>
         </details>
 
-        <details class="p-5 rounded-2xl bg-slate-50 dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
+        <details class="p-5 rounded-2xl bg-white dark:bg-[#161B22] border border-slate-200/80 dark:border-slate-800 cursor-pointer group shadow-sm">
           <summary class="font-bold text-sm text-slate-900 dark:text-white flex justify-between items-center list-none">
             <span>Is my business data private?</span>
             <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"></i>
@@ -491,75 +512,136 @@
     </div>
   </footer>
 
-  <!-- Interactive Slide Controls Script -->
+  <!-- Interactive Slide Controls & Auto-Play Script -->
   <script>
     const HERO_SLIDES = [
       {
         eyebrow: "SALES & RECEIPTS",
         titleHtml: 'Sell. Record. Get paid.<span class="block text-white/95 font-extrabold mt-1">All from your phone.</span>',
         body: "Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot.",
-        img: "assets/hero-owner-BBtcWdiJ.png",
-        chipTopLabel: "TODAY",
+        chipTopTagIcon: "calendar",
+        chipTopTagText: "TODAY",
         chipTopValue: "₦148,500",
-        chipBottomLabel: "Receipt sent",
+        chipBottomIcon: "send",
+        chipBottomTitle: "Receipt sent",
         chipBottomSub: "PDF attached"
       },
       {
         eyebrow: "STOCK & INVENTORY",
         titleHtml: 'Know what is left,<span class="block text-white/95 font-extrabold mt-1">before it runs out.</span>',
         body: "Stock counts down with every sale, and you get a nudge the moment a fast mover is close to finishing.",
-        img: "assets/hero-owner-BBtcWdiJ.png",
-        chipTopLabel: "LOW STOCK",
+        chipTopTagIcon: "alert-triangle",
+        chipTopTagText: "LOW STOCK",
         chipTopValue: "3 items to restock",
-        chipBottomLabel: "Profit tracked",
+        chipBottomIcon: "trending-up",
+        chipBottomTitle: "Profit tracked",
         chipBottomSub: "34% margin"
       },
       {
         eyebrow: "WEEKLY AI INSIGHTS",
         titleHtml: 'Clear advice from your numbers,<span class="block text-white/95 font-extrabold mt-1">every single week.</span>',
         body: "Every week Olarvo One reads your sales and tells you what is working, what is slipping, and the one thing to do next.",
-        img: "assets/hero-owner-BBtcWdiJ.png",
-        chipTopLabel: "AI INSIGHT",
+        chipTopTagIcon: "sparkles",
+        chipTopTagText: "AI INSIGHT",
         chipTopValue: "Zobo sells 3x Fridays",
-        chipBottomLabel: "Growth tip",
-        chipBottomSub: "Bundle with Semo"
+        chipBottomIcon: "message-circle",
+        chipBottomTitle: "Weekly Advice",
+        chipBottomSub: "Ready in WhatsApp"
       }
     ];
 
     let currentHeroIndex = 0;
+    const SLIDE_DURATION_MS = 5000;
+    let slideTimer = null;
+    let progressTimer = null;
+    let progressStartTime = null;
+    let isPaused = false;
 
     function renderHeroSlide(index) {
       const slide = HERO_SLIDES[index];
       if (!slide) return;
 
-      document.getElementById('hero-eyebrow').innerHTML = `<i data-lucide="sparkles" class="w-4 h-4 text-white"></i> <span>${slide.eyebrow}</span>`;
-      document.getElementById('hero-title').innerHTML = slide.titleHtml;
-      document.getElementById('hero-body').innerText = slide.body;
-
-      const chipTop = document.getElementById('hero-chip-top');
-      if (chipTop) {
-        chipTop.innerHTML = `
-          <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold flex items-center gap-1">
-            <i data-lucide="calendar" class="w-3 h-3 text-coral-400"></i> ${slide.chipTopLabel}
-          </span>
-          <span class="text-sm font-black tracking-tight text-white mt-0.5">${slide.chipTopValue}</span>
-        `;
+      const leftCol = document.getElementById('hero-left-col');
+      if (leftCol) {
+        leftCol.classList.add('switching');
       }
 
-      const chipBottom = document.getElementById('hero-chip-bottom');
-      if (chipBottom) {
-        chipBottom.innerHTML = `
-          <div class="w-8 h-8 rounded-xl bg-coral-50 text-coral-500 flex items-center justify-center font-bold flex-shrink-0">
-            <i data-lucide="send" class="w-4 h-4"></i>
-          </div>
-          <div class="text-left">
-            <p class="text-xs font-black text-slate-900">${slide.chipBottomLabel}</p>
-            <p class="text-[10px] text-slate-500 font-medium">${slide.chipBottomSub}</p>
-          </div>
-        `;
-      }
+      setTimeout(() => {
+        document.getElementById('hero-eyebrow').innerHTML = `<i data-lucide="sparkles" class="w-4 h-4 text-white"></i> <span>${slide.eyebrow}</span>`;
+        document.getElementById('hero-title').innerHTML = slide.titleHtml;
+        document.getElementById('hero-body').innerText = slide.body;
 
-      lucide.createIcons();
+        const tagEl = document.getElementById('hero-chip-top-tag');
+        if (tagEl) {
+          tagEl.innerHTML = `<i data-lucide="${slide.chipTopTagIcon}" class="w-3 h-3 text-coral-400"></i> ${slide.chipTopTagText}`;
+        }
+        const valEl = document.getElementById('hero-chip-top-val');
+        if (valEl) {
+          valEl.innerText = slide.chipTopValue;
+        }
+
+        const botIcon = document.getElementById('hero-chip-bottom-icon');
+        if (botIcon) {
+          botIcon.innerHTML = `<i data-lucide="${slide.chipBottomIcon}" class="w-4 h-4"></i>`;
+        }
+        const botTitle = document.getElementById('hero-chip-bottom-title');
+        if (botTitle) {
+          botTitle.innerText = slide.chipBottomTitle;
+        }
+        const botSub = document.getElementById('hero-chip-bottom-sub');
+        if (botSub) {
+          botSub.innerText = slide.chipBottomSub;
+        }
+
+        // Update tab styling
+        for (let i = 0; i < HERO_SLIDES.length; i++) {
+          const tab = document.getElementById(`hero-tab-${i}`);
+          const pBar = document.getElementById(`hero-progress-${i}`);
+          if (tab) {
+            if (i === index) {
+              tab.className = 'hero-tab px-3 py-1.5 rounded-xl bg-white/25 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden shadow-sm';
+            } else {
+              tab.className = 'hero-tab px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden';
+            }
+          }
+          if (pBar && i !== index) {
+            pBar.style.width = '0%';
+          }
+        }
+
+        lucide.createIcons();
+
+        if (leftCol) {
+          leftCol.classList.remove('switching');
+        }
+      }, 150);
+
+      resetSlideTimers();
+    }
+
+    function resetSlideTimers() {
+      clearInterval(slideTimer);
+      clearInterval(progressTimer);
+      progressStartTime = Date.now();
+
+      const activeBar = document.getElementById(`hero-progress-${currentHeroIndex}`);
+      if (activeBar) activeBar.style.width = '0%';
+
+      progressTimer = setInterval(() => {
+        if (isPaused) return;
+        const elapsed = Date.now() - progressStartTime;
+        const percent = Math.min((elapsed / SLIDE_DURATION_MS) * 100, 100);
+        const bar = document.getElementById(`hero-progress-${currentHeroIndex}`);
+        if (bar) {
+          bar.style.width = `${percent}%`;
+        }
+      }, 50);
+
+      slideTimer = setTimeout(() => {
+        if (!isPaused) {
+          nextHeroSlide();
+        }
+      }, SLIDE_DURATION_MS);
     }
 
     function nextHeroSlide() {
@@ -570,6 +652,20 @@
     function prevHeroSlide() {
       currentHeroIndex = (currentHeroIndex - 1 + HERO_SLIDES.length) % HERO_SLIDES.length;
       renderHeroSlide(currentHeroIndex);
+    }
+
+    function goToHeroSlide(index) {
+      currentHeroIndex = index;
+      renderHeroSlide(currentHeroIndex);
+    }
+
+    function pauseHeroTimer() {
+      isPaused = true;
+    }
+
+    function resumeHeroTimer() {
+      isPaused = false;
+      progressStartTime = Date.now();
     }
 
     function toggleMobileNav() {
@@ -587,6 +683,7 @@
         document.documentElement.classList.add('dark');
       }
       lucide.createIcons();
+      renderHeroSlide(0);
     });
   </script>
 </body>
