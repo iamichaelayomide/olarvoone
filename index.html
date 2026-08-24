@@ -52,51 +52,53 @@
 </head>
 <body class="bg-[#FAF9F6] text-slate-900 dark:bg-[#0D1117] dark:text-slate-100 transition-colors duration-200 antialiased font-sans selection:bg-coral-500 selection:text-white">
 
-  <!-- Minimalist Navigation Bar -->
-  <nav class="sticky top-0 z-50 bg-[#FAF9F6]/90 dark:bg-[#0D1117]/90 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/60 transition-all">
+  <!-- ========================================================================= -->
+  <!-- REFINED ULTRA-CLEAN NAVBAR (Linear / Apple Minimalist Style) -->
+  <!-- ========================================================================= -->
+  <nav class="sticky top-0 z-50 bg-[#FAF9F6]/85 dark:bg-[#0D1117]/85 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 transition-all">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16">
         
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2 group">
-          <img src="assets/olarvo-wordmark-dark-ClSgbQX-.svg" alt="Olarvo One" class="h-7 sm:h-8 w-auto dark:brightness-0 dark:invert transition-transform group-hover:scale-105" onerror="this.src='assets/images/logo.svg'" />
+          <img src="assets/olarvo-wordmark-dark-ClSgbQX-.svg" alt="Olarvo One" class="h-6 sm:h-7 w-auto dark:brightness-0 dark:invert transition-transform group-hover:scale-105" onerror="this.src='assets/images/logo.svg'" />
         </a>
 
         <!-- Desktop Navigation Links -->
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
-          <a href="#what-we-do" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">What we do</a>
-          <a href="#what-you-get" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">What you get</a>
-          <a href="#how-it-works" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">How it works</a>
-          <a href="#calculator" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Profit Calculator</a>
-          <a href="#stories" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">Who it's for</a>
-          <a href="#faq" class="hover:text-coral-500 dark:hover:text-coral-500 transition-colors">FAQ</a>
+        <div class="hidden md:flex items-center gap-7 text-[13.5px] font-medium text-slate-600 dark:text-slate-300">
+          <a href="#what-we-do" class="hover:text-coral-500 dark:hover:text-coral-400 transition-colors">What we do</a>
+          <a href="#what-you-get" class="hover:text-coral-500 dark:hover:text-coral-400 transition-colors">What you get</a>
+          <a href="#how-it-works" class="hover:text-coral-500 dark:hover:text-coral-400 transition-colors">How it works</a>
+          <a href="#calculator" class="hover:text-coral-500 dark:hover:text-coral-400 transition-colors">Profit Calculator</a>
+          <a href="#stories" class="hover:text-coral-500 dark:hover:text-coral-400 transition-colors">Who it's for</a>
+          <a href="#faq" class="hover:text-coral-500 dark:hover:text-coral-400 transition-colors">FAQ</a>
         </div>
 
-        <!-- Right Action Buttons -->
-        <div class="hidden sm:flex items-center gap-3">
-          <button onclick="toggleTheme()" class="p-2.5 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white rounded-2xl hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors" title="Toggle Theme">
+        <!-- Right Actions -->
+        <div class="hidden sm:flex items-center gap-2.5">
+          <button onclick="toggleTheme()" class="p-2 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white rounded-full hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors" title="Toggle Theme">
             <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
             <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
           </button>
 
-          <a href="app.html" class="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-coral-500 px-3 py-2 transition-colors">
+          <a href="app.html" class="text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-coral-500 px-3 py-1.5 transition-colors">
             Sign in
           </a>
 
-          <a href="app.html" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-white bg-coral-500 hover:bg-coral-600 active:scale-95 rounded-2xl shadow-lg shadow-coral-500/25 transition-all">
-            <span>Try it free</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <a href="app.html" class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold text-white bg-coral-500 hover:bg-coral-600 active:scale-95 rounded-full shadow-sm transition-all">
+            <span>Try free</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
 
-        <!-- Mobile Menu Trigger -->
-        <div class="flex items-center gap-2 md:hidden">
-          <button onclick="toggleTheme()" class="p-2 text-slate-600 dark:text-slate-300">
+        <!-- Mobile Trigger -->
+        <div class="flex items-center gap-1.5 md:hidden">
+          <button onclick="toggleTheme()" class="p-2 text-slate-600 dark:text-slate-300 rounded-full">
             <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
             <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
           </button>
           <button onclick="toggleMobileNav()" class="p-2 text-slate-700 dark:text-slate-200 rounded-lg">
-            <i data-lucide="menu" class="w-6 h-6"></i>
+            <i data-lucide="menu" class="w-5 h-5"></i>
           </button>
         </div>
 
@@ -104,102 +106,103 @@
     </div>
 
     <!-- Mobile Dropdown -->
-    <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-6 border-t border-slate-200 dark:border-slate-800 space-y-3 bg-[#FAF9F6] dark:bg-[#0D1117]">
-      <a href="#what-we-do" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">What we do</a>
-      <a href="#what-you-get" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">What you get</a>
-      <a href="#how-it-works" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">How it works</a>
-      <a href="#calculator" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Profit Calculator</a>
-      <a href="#stories" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">Who it's for</a>
-      <a href="#faq" onclick="toggleMobileNav()" class="block py-2 text-sm font-semibold text-slate-700 dark:text-slate-200">FAQ</a>
-      <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
-        <a href="app.html" class="w-full text-center py-2.5 font-semibold text-slate-800 dark:text-white border border-slate-300 dark:border-slate-700 rounded-xl">Sign in</a>
-        <a href="app.html" class="w-full text-center py-2.5 font-bold text-white bg-coral-500 hover:bg-coral-600 rounded-xl shadow">Get started free</a>
+    <div id="mobile-nav" class="hidden md:hidden px-4 pt-2 pb-6 border-t border-slate-200/60 dark:border-slate-800/60 space-y-3 bg-[#FAF9F6] dark:bg-[#0D1117]">
+      <a href="#what-we-do" onclick="toggleMobileNav()" class="block py-1.5 text-sm font-semibold text-slate-700 dark:text-slate-200">What we do</a>
+      <a href="#what-you-get" onclick="toggleMobileNav()" class="block py-1.5 text-sm font-semibold text-slate-700 dark:text-slate-200">What you get</a>
+      <a href="#how-it-works" onclick="toggleMobileNav()" class="block py-1.5 text-sm font-semibold text-slate-700 dark:text-slate-200">How it works</a>
+      <a href="#calculator" onclick="toggleMobileNav()" class="block py-1.5 text-sm font-semibold text-slate-700 dark:text-slate-200">Profit Calculator</a>
+      <a href="#stories" onclick="toggleMobileNav()" class="block py-1.5 text-sm font-semibold text-slate-700 dark:text-slate-200">Who it's for</a>
+      <a href="#faq" onclick="toggleMobileNav()" class="block py-1.5 text-sm font-semibold text-slate-700 dark:text-slate-200">FAQ</a>
+      <div class="pt-3 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2">
+        <a href="app.html" class="w-full text-center py-2 text-sm font-semibold text-slate-800 dark:text-white border border-slate-300 dark:border-slate-700 rounded-full">Sign in</a>
+        <a href="app.html" class="w-full text-center py-2 text-sm font-bold text-white bg-coral-500 hover:bg-coral-600 rounded-full shadow">Get started free</a>
       </div>
     </div>
   </nav>
 
   <!-- ========================================================================= -->
-  <!-- HERO SECTION: Signature Coral Stage with Consistent Framing & iOS Icons -->
+  <!-- HERO SECTION: Signature Coral Stage with Emil Design Engineering Polish -->
   <!-- ========================================================================= -->
-  <section class="pt-6 pb-12 sm:pt-8 sm:pb-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto space-y-6">
+  <section class="pt-4 pb-12 sm:pt-6 sm:pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto space-y-5">
 
       <!-- Main Signature Coral Hero Stage (Auto-Rotating with Consistent Card Frame) -->
-      <div id="hero-carousel-card" class="rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()">
+      <div id="hero-carousel-card" class="rounded-[2.25rem] sm:rounded-[2.5rem] bg-coral-500 text-white overflow-hidden shadow-2xl relative select-none" onmouseenter="pauseHeroTimer()" onmouseleave="resumeHeroTimer()">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center px-6 py-12 sm:px-12 sm:py-16 lg:px-16 lg:py-16 min-h-[520px]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14 min-h-[490px]">
           
           <!-- Left: Rotating Typography & Actions -->
           <div id="hero-left-col" class="lg:col-span-7 z-10 text-left hero-content-fade">
             
-            <!-- iOS Style Tag -->
-            <div id="hero-eyebrow" class="inline-flex items-center gap-2 text-white/95 text-xs sm:text-sm font-extrabold uppercase tracking-widest mb-4">
-              <span class="w-6 h-6 rounded-lg bg-white/20 flex items-center justify-center">
-                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-white"></i>
-              </span>
+            <!-- iOS Style Eyebrow Tag -->
+            <div id="hero-eyebrow" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-white text-[11px] sm:text-xs font-extrabold uppercase tracking-wider mb-4">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-white"></i>
               <span>SALES & RECEIPTS</span>
             </div>
 
-            <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-[52px] font-black text-white leading-[1.08] tracking-tight mb-5">
+            <!-- Headline -->
+            <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-[46px] font-black text-white leading-[1.1] tracking-tight mb-4">
               Sell. Record. Get paid.
-              <span class="block text-white/95 font-extrabold mt-1">All from your phone.</span>
+              <span class="block text-white/95 font-extrabold mt-0.5">All from your phone.</span>
             </h1>
 
-            <p id="hero-body" class="text-base sm:text-lg text-white/90 leading-relaxed max-w-xl mb-8 font-normal">
+            <!-- Subtitle -->
+            <p id="hero-body" class="text-sm sm:text-base lg:text-[17px] text-white/90 leading-relaxed max-w-lg mb-7 font-normal">
               Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot.
             </p>
 
-            <div class="flex flex-wrap items-center gap-3.5 mb-10">
-              <a href="app.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-900 font-bold text-sm rounded-2xl shadow-xl hover:bg-slate-50 active:scale-95 transition-all">
+            <!-- Buttons -->
+            <div class="flex flex-wrap items-center gap-3 mb-8">
+              <a href="app.html" class="inline-flex items-center gap-2 px-7 py-3 bg-white text-slate-900 font-bold text-xs sm:text-sm rounded-full shadow-xl hover:bg-slate-50 active:scale-95 transition-all">
                 <span>Start free</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
-              <a href="#what-we-do" class="inline-flex items-center gap-2 px-6 py-3.5 bg-white/15 hover:bg-white/25 border border-white/40 text-white font-semibold text-sm rounded-2xl transition-all">
+              <a href="#what-we-do" class="inline-flex items-center gap-2 px-5 py-3 bg-white/15 hover:bg-white/25 border border-white/30 text-white font-semibold text-xs sm:text-sm rounded-full transition-all">
                 <span>Explore all features</span>
               </a>
             </div>
 
-            <!-- iOS Styled Micro Feature Badges -->
-            <div class="flex flex-wrap items-center gap-2.5 text-xs text-white/90 font-medium pt-4 border-t border-white/20">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20">
-                <i data-lucide="clock-3" class="w-3.5 h-3.5 text-white"></i> Set up in 5 mins
+            <!-- Understated Micro Proof Points -->
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-white/85 font-medium">
+              <span class="inline-flex items-center gap-1.5">
+                <i data-lucide="clock-3" class="w-3.5 h-3.5 text-white/90"></i> Set up in 5 mins
               </span>
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20">
-                <i data-lucide="wifi-off" class="w-3.5 h-3.5 text-white"></i> 100% Offline-ready
+              <span class="inline-flex items-center gap-1.5">
+                <i data-lucide="wifi-off" class="w-3.5 h-3.5 text-white/90"></i> 100% Offline-ready
               </span>
-              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20">
-                <i data-lucide="send" class="w-3.5 h-3.5 text-white"></i> WhatsApp receipts
+              <span class="inline-flex items-center gap-1.5">
+                <i data-lucide="send" class="w-3.5 h-3.5 text-white/90"></i> WhatsApp receipts
               </span>
             </div>
 
           </div>
 
-          <!-- Right: Consistent Rounded Card Frame with Real Photography & iOS Badges -->
+          <!-- Right: Sleek Bezel Card Frame with Perfectly Anchored Floating Chips -->
           <div class="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
-            <div id="hero-right-col" class="relative w-full max-w-sm sm:max-w-md hero-content-fade">
+            <div id="hero-right-col" class="relative w-full max-w-xs sm:max-w-sm lg:max-w-md hero-content-fade">
               
               <!-- Outer iOS Frosted Frame -->
-              <div class="relative rounded-[2.25rem] p-2.5 sm:p-3 bg-white/20 backdrop-blur-md border border-white/30 shadow-2xl shadow-black/20 overflow-hidden">
-                <div id="hero-img-box" class="relative w-full aspect-[4/3.2] sm:aspect-[16/11] rounded-[1.75rem] overflow-hidden bg-slate-900">
+              <div class="relative rounded-[2rem] p-2 sm:p-2.5 bg-white/15 backdrop-blur-md border border-white/25 shadow-2xl shadow-black/20 overflow-hidden">
+                <div id="hero-img-box" class="relative w-full aspect-[4/3] rounded-[1.5rem] overflow-hidden bg-slate-900">
                   <img id="hero-main-img" src="assets/images/african-hero-store-owner.jpg" alt="African store owner recording sales" class="w-full h-full object-cover object-center" onerror="this.src='assets/african-hero-store-owner.jpg'" />
                 </div>
               </div>
 
               <!-- Floating iOS Chip Top -->
-              <div id="hero-chip-top" class="absolute -top-3 -left-3 sm:-left-4 z-20 bg-slate-950/85 backdrop-blur-xl text-white px-4 py-2.5 rounded-2xl shadow-2xl border border-white/15 flex items-center gap-3 animate-float-1">
-                <div id="hero-chip-top-icon-wrap" class="w-8 h-8 rounded-xl bg-coral-500/20 text-coral-400 flex items-center justify-center">
-                  <i id="hero-chip-top-icon" data-lucide="calendar" class="w-4 h-4"></i>
+              <div id="hero-chip-top" class="absolute -top-3 left-3 sm:-left-3 z-20 bg-slate-950/90 backdrop-blur-xl text-white px-3.5 py-2 rounded-2xl shadow-xl border border-white/15 flex items-center gap-2.5 animate-float-1">
+                <div id="hero-chip-top-icon-wrap" class="w-7 h-7 rounded-xl bg-coral-500/25 text-coral-400 flex items-center justify-center">
+                  <i id="hero-chip-top-icon" data-lucide="calendar" class="w-3.5 h-3.5"></i>
                 </div>
                 <div>
                   <span id="hero-chip-top-tag" class="text-[9px] uppercase tracking-wider text-slate-400 font-bold block">TODAY</span>
-                  <span id="hero-chip-top-val" class="text-sm font-black tracking-tight text-white">₦148,500</span>
+                  <span id="hero-chip-top-val" class="text-xs sm:text-sm font-black tracking-tight text-white">₦148,500</span>
                 </div>
               </div>
 
               <!-- Floating iOS Chip Bottom -->
-              <div id="hero-chip-bottom" class="absolute -bottom-3 -right-3 sm:-right-4 z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl text-slate-900 dark:text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-200/60 dark:border-white/10 flex items-center gap-3.5 animate-float-2">
-                <div id="hero-chip-bottom-icon" class="w-9 h-9 rounded-xl bg-coral-500 text-white flex items-center justify-center shadow-md shadow-coral-500/30">
-                  <i data-lucide="send" class="w-4 h-4"></i>
+              <div id="hero-chip-bottom" class="absolute -bottom-3 right-3 sm:-right-3 z-20 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl text-slate-900 dark:text-white px-3.5 py-2.5 rounded-2xl shadow-xl border border-slate-100 dark:border-white/10 flex items-center gap-2.5 animate-float-2">
+                <div id="hero-chip-bottom-icon" class="w-8 h-8 rounded-xl bg-coral-500 text-white flex items-center justify-center shadow-md shadow-coral-500/30">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
                 </div>
                 <div class="text-left">
                   <p id="hero-chip-bottom-title" class="text-xs font-black text-slate-900 dark:text-white">Receipt sent</p>
@@ -212,31 +215,35 @@
 
         </div>
 
-        <!-- Slide Tabs & Live Progress Bars -->
-        <div class="px-6 sm:px-8 py-3.5 bg-black/15 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-white/80">
-          <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
-            <button onclick="goToHeroSlide(0)" id="hero-tab-0" class="hero-tab px-3 py-1.5 rounded-xl bg-white/25 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden shadow-sm">
+        <!-- Slide Tabs & Live Progress Bars (Apple / Linear Clean Style) -->
+        <div class="px-6 sm:px-8 py-3 bg-black/10 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-white/85">
+          <div class="flex items-center gap-2 flex-wrap">
+            
+            <button onclick="goToHeroSlide(0)" id="hero-tab-0" class="hero-tab px-3.5 py-1.5 rounded-full bg-white/25 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden shadow-sm">
               <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
               <span>1. Sales & POS</span>
               <div id="hero-progress-0" class="absolute bottom-0 left-0 h-0.5 bg-white w-0 hero-progress-fill"></div>
             </button>
-            <button onclick="goToHeroSlide(1)" id="hero-tab-1" class="hero-tab px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden">
+
+            <button onclick="goToHeroSlide(1)" id="hero-tab-1" class="hero-tab px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden">
               <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
               <span>2. Stock & Inventory</span>
               <div id="hero-progress-1" class="absolute bottom-0 left-0 h-0.5 bg-white w-0 hero-progress-fill"></div>
             </button>
-            <button onclick="goToHeroSlide(2)" id="hero-tab-2" class="hero-tab px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden">
+
+            <button onclick="goToHeroSlide(2)" id="hero-tab-2" class="hero-tab px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden">
               <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
               <span>3. Weekly AI Insights</span>
               <div id="hero-progress-2" class="absolute bottom-0 left-0 h-0.5 bg-white w-0 hero-progress-fill"></div>
             </button>
+
           </div>
 
-          <div class="flex items-center gap-2">
-            <button onclick="prevHeroSlide()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 flex items-center justify-center text-white active:scale-95 transition-all">
+          <div class="flex items-center gap-1.5">
+            <button onclick="prevHeroSlide()" class="w-7 h-7 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-white active:scale-95 transition-all" title="Previous Slide">
               <i data-lucide="chevron-left" class="w-4 h-4"></i>
             </button>
-            <button onclick="nextHeroSlide()" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 flex items-center justify-center text-white active:scale-95 transition-all">
+            <button onclick="nextHeroSlide()" class="w-7 h-7 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center text-white active:scale-95 transition-all" title="Next Slide">
               <i data-lucide="chevron-right" class="w-4 h-4"></i>
             </button>
           </div>
@@ -246,10 +253,10 @@
 
       <!-- Hauliin-Style 3-Column Bordered Highlight Bar (Under Hero with Premium iOS Badges) -->
       <div class="rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-[#161B22] shadow-sm">
-        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200/80 dark:divide-slate-800">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200/80 dark:border-slate-800">
           
-          <div class="flex items-center gap-4 px-6 py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
-            <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-2xl bg-coral-500/10 text-coral-500 group-hover:scale-105 transition-transform">
+          <div class="flex items-center gap-4 px-6 py-4 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
+            <span class="inline-flex size-10 shrink-0 items-center justify-center rounded-2xl bg-coral-500/10 text-coral-500 group-hover:scale-105 transition-transform">
               <i data-lucide="message-square-text" class="w-5 h-5"></i>
             </span>
             <div>
@@ -258,8 +265,8 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 px-6 py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
-            <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-2xl bg-coral-500/10 text-coral-500 group-hover:scale-105 transition-transform">
+          <div class="flex items-center gap-4 px-6 py-4 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
+            <span class="inline-flex size-10 shrink-0 items-center justify-center rounded-2xl bg-coral-500/10 text-coral-500 group-hover:scale-105 transition-transform">
               <i data-lucide="database-zap" class="w-5 h-5"></i>
             </span>
             <div>
@@ -268,8 +275,8 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-4 px-6 py-5 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
-            <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-2xl bg-coral-500/10 text-coral-500 group-hover:scale-105 transition-transform">
+          <div class="flex items-center gap-4 px-6 py-4 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors group">
+            <span class="inline-flex size-10 shrink-0 items-center justify-center rounded-2xl bg-coral-500/10 text-coral-500 group-hover:scale-105 transition-transform">
               <i data-lucide="sparkles" class="w-5 h-5"></i>
             </span>
             <div>
@@ -585,7 +592,7 @@
             Up and running in under 5 minutes. No hardware, no complicated setup, and 100% offline-ready.
           </p>
           <div class="pt-4">
-            <a href="app.html" class="inline-flex items-center gap-2 px-7 py-3.5 bg-coral-500 hover:bg-coral-600 active:scale-95 text-white font-bold text-sm rounded-2xl shadow-lg shadow-coral-500/25 transition-all">
+            <a href="app.html" class="inline-flex items-center gap-2 px-7 py-3.5 bg-coral-500 hover:bg-coral-600 active:scale-95 text-white font-bold text-sm rounded-full shadow-lg shadow-coral-500/25 transition-all">
               <span>Try it with your own shop</span>
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
@@ -717,7 +724,7 @@
             </div>
           </div>
 
-          <a href="app.html" class="block w-full py-3.5 bg-white text-slate-900 font-bold text-xs rounded-xl shadow hover:bg-slate-50 transition-colors">
+          <a href="app.html" class="block w-full py-3.5 bg-white text-slate-900 font-bold text-xs rounded-full shadow hover:bg-slate-50 transition-colors">
             Start Managing Your Shop Free →
           </a>
         </div>
@@ -848,7 +855,7 @@
       <p class="text-base text-coral-100 mb-8 max-w-xl mx-auto font-normal">
         Join hundreds of successful shop owners across Africa managing sales, stock, and profits with Olarvo One.
       </p>
-      <a href="app.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-900 font-bold rounded-2xl shadow-xl hover:bg-slate-50 active:scale-95 transition-all text-sm">
+      <a href="app.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-900 font-bold rounded-full shadow-xl hover:bg-slate-50 active:scale-95 transition-all text-sm">
         <span>Launch "My Shop" (Free)</span>
         <i data-lucide="arrow-right" class="w-4 h-4"></i>
       </a>
@@ -877,7 +884,7 @@
     const HERO_SLIDES = [
       {
         eyebrow: "SALES & RECEIPTS",
-        titleHtml: 'Sell. Record. Get paid.<span class="block text-white/95 font-extrabold mt-1">All from your phone.</span>',
+        titleHtml: 'Sell. Record. Get paid.<span class="block text-white/95 font-extrabold mt-0.5">All from your phone.</span>',
         body: "Log a sale in two taps, watch stock and profit update themselves, and send a branded receipt on the spot.",
         img: "assets/images/african-hero-store-owner.jpg",
         alt: "African small business owner smiling at her phone while recording a sale",
@@ -890,7 +897,7 @@
       },
       {
         eyebrow: "STOCK & INVENTORY",
-        titleHtml: 'Know what is left,<span class="block text-white/95 font-extrabold mt-1">before it runs out.</span>',
+        titleHtml: 'Know what is left,<span class="block text-white/95 font-extrabold mt-0.5">before it runs out.</span>',
         body: "Stock counts down with every sale, and you get a nudge the moment a fast mover is close to finishing.",
         img: "assets/feature-stock-Dgw1r1KG.jpg",
         alt: "Shop owner checking his shelves and stock with his phone in hand",
@@ -903,7 +910,7 @@
       },
       {
         eyebrow: "WEEKLY AI INSIGHTS",
-        titleHtml: 'Clear advice from your numbers,<span class="block text-white/95 font-extrabold mt-1">every single week.</span>',
+        titleHtml: 'Clear advice from your numbers,<span class="block text-white/95 font-extrabold mt-0.5">every single week.</span>',
         body: "Every week Olarvo One reads your sales and tells you what is working, what is slipping, and the one thing to do next.",
         img: "assets/feature-insights-uoVGa4An.jpg",
         alt: "Business owner smiling at her phone while reading her weekly AI insights",
@@ -936,9 +943,7 @@
       setTimeout(() => {
         // Update Left Text
         document.getElementById('hero-eyebrow').innerHTML = `
-          <span class="w-6 h-6 rounded-lg bg-white/20 flex items-center justify-center">
-            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-white"></i>
-          </span>
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-white"></i>
           <span>${slide.eyebrow}</span>
         `;
         document.getElementById('hero-title').innerHTML = slide.titleHtml;
@@ -953,7 +958,7 @@
         // Update Top Chip
         const topIconWrap = document.getElementById('hero-chip-top-icon-wrap');
         if (topIconWrap) {
-          topIconWrap.innerHTML = `<i data-lucide="${slide.chipTopTagIcon}" class="w-4 h-4"></i>`;
+          topIconWrap.innerHTML = `<i data-lucide="${slide.chipTopTagIcon}" class="w-3.5 h-3.5"></i>`;
         }
         const tagEl = document.getElementById('hero-chip-top-tag');
         if (tagEl) {
@@ -967,7 +972,7 @@
         // Update Bottom Chip
         const botIcon = document.getElementById('hero-chip-bottom-icon');
         if (botIcon) {
-          botIcon.innerHTML = `<i data-lucide="${slide.chipBottomIcon}" class="w-4 h-4"></i>`;
+          botIcon.innerHTML = `<i data-lucide="${slide.chipBottomIcon}" class="w-3.5 h-3.5"></i>`;
         }
         const botTitle = document.getElementById('hero-chip-bottom-title');
         if (botTitle) {
@@ -984,9 +989,9 @@
           const pBar = document.getElementById(`hero-progress-${i}`);
           if (tab) {
             if (i === index) {
-              tab.className = 'hero-tab px-3 py-1.5 rounded-xl bg-white/25 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden shadow-sm';
+              tab.className = 'hero-tab px-3.5 py-1.5 rounded-full bg-white/25 text-white font-bold flex items-center gap-2 transition-all relative overflow-hidden shadow-sm';
             } else {
-              tab.className = 'hero-tab px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden';
+              tab.className = 'hero-tab px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 text-white/75 hover:text-white font-semibold flex items-center gap-2 transition-all relative overflow-hidden';
             }
           }
           if (pBar && i !== index) {
